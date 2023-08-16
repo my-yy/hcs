@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html><head>
+<title>读博之路</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/scss/journal.scss" integrity="" media="screen">
+
+
+
+<link rel="stylesheet" href="/blog/scss/dark-mode.scss" integrity="" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://www.huacishu.com/blog">
+    
+        <div class="nav-title">
+            花辞树
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/about/me/">
+                关于
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%82%9f" onclick="onNavClick(`#感悟-nav`)" id="感悟-nav">
+									感悟
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/about/me/">
+                    关于
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%82%9f" onclick="onNavClick(`#感悟-nav`)" id="感悟-nav">
+									感悟
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://www.huacishu.com/blog">
+            花辞树
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://www.huacishu.com/blog">
+        <div class="single-column-header-title">花辞树</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    读博之路
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            
+                        </time>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    
+
+<p>我本身并没有对学术的向往，也没有能毕业的把握，选择读博不过是硕士毕业后觉得在 国家外汇局 当废物并非人生追求。</p>
+
+<p>在人大读硕士期间，我曾负责搞一个叫做“语音向量”（Speech Embedding）的新领域研究，做了一年多的实验探索，投入很多精力却毫无收获。</p>
+
+<p>当时我被灌输思想是“做不出实验的原因是你努力不够、缺少沟通交流”，这让我有些愧疚感，加上去别地方做研究意味着硕士期间的努力付之东流，我不想半途而废，因此在决定读博依旧选择回到人大。</p>
+
+<p>不过有趣的是，政审时人大负责招生的老师曾因为我向外汇局维权的事考虑挂掉我，但是在导师的压力下保住了（对此我十分感激）。我倒觉得若因为这件事拒绝我并非坏事，一来我一向以理服人、并不会记恨学校，只是会给外汇的账上再记下一笔。二是，或许我能够有幸选择一个更为专业的地方，从而让读博之路顺利一些。当然，最后还是顺利入学了<img src="http://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em">。</p>
+
+<p>我记得刚刚博士入学时，我决心端正态度，为此放弃了软件开发这个我真正爱好的东西，全身心投入到上面去。因为我并没有能顺利毕业的把握，一方面我对学术毫无向往、对所研究内容毫无兴趣，另一方面人大本专业博士按时毕业率仅20%（这是我在开学典礼上才得知的<img src="http://cdn.huacishu.com/img/bili_囧.png" style="height: 1.5em">）。所以这是破釜沉舟、背水一战，必须全力以赴。我也一切都想好了，如果毕不了业，那也没什么可留恋的，我会回外汇局把仇一块儿报了吧。</p>
+
+<hr />
+
+<p>整体而言，我觉得读博是一个刷新既定认知的过程，就好似当年去复读班，静下心来再回顾，渐渐从一些早已熟悉的东西中产生另一番认识。在这个过程中，我渐渐发觉，其实<strong>在做研究这件事上自己还并未入门，缺乏专业性。</strong></p>
+
+<p>这个结论是慢慢形成的，最初是博一之初，我向师弟熊楚原请教如何做研究。楚原是<a href="https://arxiv.org/abs/1911.09338">VFMR</a>文章的作者，最初看到这篇文章时我十分震撼。虽然这篇论文最后没有中，里面的一些结论也些问题。但这是受制于客观条件的，在落后的资源环境下他能依靠个人努力搞出那些结果已经相当了不起了，换做我是办不到的。我从他那里了解到了<strong>复现他人工作的重要性</strong>。我总结为：很多论文作者其实与骗子无二（生活所迫我可以理解），结果并不可信。此外，结论的成立都是有所谓的前提的，并非放之四海而皆准。因此，论文只是相对真理，要相信自己复现的东西，如果被论文中的错误观点所支配，则会走上歧路。</p>
+
+<p>其次是我博士期间的好友Jobs，我和他提及硕士时间的研究经历，他敏锐指出我的研究套路是不对头的。<strong>做研究绝对不是上来就做实验，而是应该先大量阅读该领域与相关领域文章，寻找靠谱且易于实现的想法。</strong> 一上来就做实验，今天模型改改这儿，明天又改改那儿，人生就是这样被浪费掉了。我很感谢他的启发，否则我现在已经退学了。</p>
+
+<p>最后是源于我的一系列经历与反思：<strong>我发现自己的努力是毫无用处的</strong>。博一那会儿，我先做了三个月“语音向量”的研究，但毫无收获。之后被派去做“音脸关系”（Voice-Face Association Learning）的研究，又做了将近半年。在这些研究过程中，我加强了交流汇报，针对硬件设备不足的问题还自费购买了实验设备（我很感谢导师在偶然得知此事后给我报销了），心无旁骛地做实验，结果却依旧一无所获<img src="http://cdn.huacishu.com/img/bili_囧.png" style="height: 1.5em">。</p>
+
+<p>表面原因是研究内容对设备性能要求太高了，实验出结果太慢——虽然我将电脑堆到了 AMD 3900XT + RXT3090 + 64GB RAM + 2TB SSD + 4TB HDD 的配置，但是对于跑实验而言依旧捉襟见肘。在最初研究视频任务时，为上百GB的视频数据集生成光流图片，光流抽取用了一周多时间，而生成的光流图片则达到了1TB。由于这些光流图都是一系列小文件，做实验时放在机械硬盘上会遇到IO瓶颈，显卡利用不起来，需要落到SSD上&hellip;如今想起那段时间简直噩梦一样。</p>
+
+<p>深层因素则是对于专业的无知。一是，从我现在的视角来看，用一张3090显卡去做大规模视频任务是十分荒诞的行为。二是在做了半年多后，我偶然发现自己的研究领域（音脸关系）属于“跨模态”的分支。契机源于我看到研究领域里一篇新出的文章所用的方法十分高明，深入研究发现这个方法本是跨模态领域中的经典思路，而论文作者也出身于搞跨模态研究的实验室。所以我对于他们虽然做的稍晚，但却能不断在这个领域中快速发文章一事毫不意外，因为那是有在相关领域深耕十余年的功底。</p>
+
+<p>在博一即将结束时，我觉得再这么下去迟早要完<img src="http://cdn.huacishu.com/img/bili_囧.png" style="height: 1.5em">。于是我不再关注什么交流、汇报，对“试试这儿、改改那儿”的建议理性看待。我认为这件事必须转变策略，于是乎我转头先看了一个月相关领域的文献，积累了几个容易出结果的实验想法，然后一个个去实验验证，一个想法最多搞2周，<strong>做不出来就换下个想法，绝对不在一个想法上死磕。</strong></p>
+
+<p>事实证明这条新路是对的，之前做实验两年毫无进展，而在有了正确的路线后不到一个月就找到了可行的方案。之后我写了第一篇文章投CVPR，不过因为缺少专业储备，论文中存在两个常识性错误，没有从审稿人那儿过关。但是，路子是大差不差了，在又看论文积累了几个月后，我完成了第二篇投稿。从开始实验到完成论文不到两个月，这次降低了投稿目标，有幸中了。从此之后，我对研究也有了一些信心，或许之后就是投入时间的事了。</p>
+
+<hr />
+
+<p>如今回看，我对于博士已经过去的这两年是有些失望的。因为本以为是自己努力不够导致无法出成果，后来却发现其实大方向本是错的。我曾认为指导是专业且正确的，但是后来却发现其实本质上就是自己在瞎摸索，因为这件事根本不在指导者的能力范围内（我常常为一些无知的尝试感到后怕）。虽然目前取得了一点儿进展，但这并非源于厚积薄发，只是找到了正确的方法。倘若当初硕士期间能懂得些许道理，那我完全能搞得出来。但现实却是，硕士与博一在研究上的努力不过是在走弯路、做无用功。感叹我并没有那么幸运，被正确的方法所选择。</p>
+
+<p>我比喻硕博的经历是：<strong>一个初学者被赋予使命去击败BOSS级的怪物，然而，却拿着落后的工具与错误的新手指引。所幸在足够长的时间维度下，经过不断行进、误打误撞，慢慢摸索到一条些许正确的路。</strong></p>
+
+<p><strong>我不认为教育本应该是如此的。</strong></p>
+
+<h2 id="感悟">感悟</h2>
+
+<p><strong>1.一定要跟随”靠谱“的指导者</strong><br />
+”靠谱“反应在三个方面：<br />
+1）能为研究提供足够的资源支持<br />
+2）对所研究内容有深入理解，或者有相关背景经验，能够指明正确的探索方向。<br />
+这样作为初学者能少走很多的弯路。因为很多问题的解决方案在个人的认知范围之外，如果没有一个过来人去点醒你，那么解决问题就只能靠偶然、靠运气。我见过身边很多人（包括我自己），<strong>一上来就走上一条弯路，到毕业也未能走出。</strong></p>
+
+<p>3）对未知的东西心存敬畏，在研究没有成果时能够正确归因。<br />
+努力有效的前提在于方向的正确性，在于目标的可达性。努力并非是决定性因素，一流的成果来自于“一流的资源” +“一流的想法” + “一流的投入”，否则就只能靠所谓“一流的运气”。</p>
+
+<p><strong>2.从主流领域开始积累经验，谨慎选择新领域</strong><br />
+作为一个初学者，选择从主流领域入手能够有丰富的资源作为学习参考，能够积累到对常见问题的通用性解法，便于快速积累能力。如果一上来就从少有人研究的新领域入手做研究，在没有充分指导的情况下，由于可参考的前人工作太少，无法积累能力，并且难免思想闭塞，也无法形成有效思路。</p>
+
+<p><strong>3.做能力范围之内的研究；对于在能力范围之外的研究，尽力而为即可，不要有愧疚感</strong><br />
+问题是与能力相匹配的。如果一个问题与个人能力范围相契合，那么它本质上就是可解决的，只要付出时间精力、加强沟通即可。<br />
+但是，如果一个问题是超出能力范围的，那么最终解决与否就要被运气所左右。运气可能在努力一个月之后出现，也可能在努力十年后出现，或者在短暂的一生中根本不会出现。如果是后者，那么努力便毫无意义，人生也就这样被浪费掉了。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;"></p>
+                    
+                </div>
+            </div>
+
+
+            <nav class="post-pagination">
+
+              
+                  <a class="newer-posts" href="https://www.huacishu.com/blog/2022/08/21/anya_memo/">
+                    <br>AnyaMemo：开源的Mac端文档复习工具
+                  </a>
+              
+
+                
+                    <a class="older-posts" href="https://www.huacishu.com/blog/2022/07/03/self_lifting/">
+			              <br>音脸关系学习论文解读：Self-Lifting
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

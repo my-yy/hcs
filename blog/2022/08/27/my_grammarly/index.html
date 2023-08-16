@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html><head>
+<title>Grammarly Latex语法检查工具</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/scss/journal.scss" integrity="" media="screen">
+
+
+
+<link rel="stylesheet" href="/blog/scss/dark-mode.scss" integrity="" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://www.huacishu.com/blog">
+    
+        <div class="nav-title">
+            花辞树
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/about/me/">
+                关于
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e8%bf%99%e6%98%af%e5%81%9a%e4%bb%80%e4%b9%88%e7%94%a8%e7%9a%84" onclick="onNavClick(`#这是做什么用的-nav`)" id="这是做什么用的-nav">
+									这是做什么用的？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%b0%e6%9c%89%e5%8a%9f%e8%83%bd" onclick="onNavClick(`#现有功能-nav`)" id="现有功能-nav">
+									现有功能
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2" onclick="onNavClick(`#本地部署-nav`)" id="本地部署-nav">
+									本地部署
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%9b%b8%e5%85%b3%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" onclick="onNavClick(`#相关解决方案-nav`)" id="相关解决方案-nav">
+									相关解决方案
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/about/me/">
+                    关于
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e8%bf%99%e6%98%af%e5%81%9a%e4%bb%80%e4%b9%88%e7%94%a8%e7%9a%84" onclick="onNavClick(`#这是做什么用的-nav`)" id="这是做什么用的-nav">
+									这是做什么用的？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%8e%b0%e6%9c%89%e5%8a%9f%e8%83%bd" onclick="onNavClick(`#现有功能-nav`)" id="现有功能-nav">
+									现有功能
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2" onclick="onNavClick(`#本地部署-nav`)" id="本地部署-nav">
+									本地部署
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%9b%b8%e5%85%b3%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88" onclick="onNavClick(`#相关解决方案-nav`)" id="相关解决方案-nav">
+									相关解决方案
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://www.huacishu.com/blog">
+            花辞树
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://www.huacishu.com/blog">
+        <div class="single-column-header-title">花辞树</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Grammarly Latex语法检查工具
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            
+                        </time>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    
+
+<p>演示界面：<a href="https://huacishu.com/app/grammarly/">https://huacishu.com/app/grammarly/</a>
+源代码：<a href="https://github.com/my-yy/MyGrammarly">Github</a>
+下载到本地使用：<a href="https://github.com/my-yy/MyGrammarly/archive/refs/heads/main.zip">点击此处</a></p>
+
+<h2 id="这是做什么用的">这是做什么用的？</h2>
+
+<p>Latex中的一些符号（如公式$$、引用~\cite）会干扰Grammarly的语法检查，
+例如这个句子中<code>modalitiies</code>拼写错误，但Grammarly无法检测出来:
+<img src="https://cdn.huacishu.com/img/202208271136195.png" alt="l" style="zoom: 50%;" /></p>
+
+<p>为此我写了一个小工具，配合Grammarly的浏览器插件使用，去除latex中的符号以方便语法检查，检查完毕后再转换回去：</p>
+
+<p><img src="https://cdn.huacishu.com/img/202208271145509.gif" alt="" /></p>
+
+<h2 id="现有功能">现有功能</h2>
+
+<p>去除注释、引用（~\cite、~\shortcite、 ~\ref、~\cref）与行内公式$$</p>
+
+<p>例如对于如下内容：</p>
+
+<pre><code>%Some comments
+Bain~\shortcite{358_frozen} used a space-time transformer to  % Inline comments
+Given an unlabeled video dataset $\mathcal{D}=\{x_i\}_{i=1}^N$,
+where each instance $x_i$ has two modalitiies: voice $x^v_i$ and face $x^f_i$.
+</code></pre>
+
+<p>点击“转换”会符号转变为编号[*]形式：</p>
+
+<pre><code>Bain[0] used a space-time transformer to 
+Given an unlabeled video dataset [1],
+where each instance [2] has two modalities: voice [3] and face [4].
+</code></pre>
+
+<p>再点击“回写”则将编号替换回原内容:</p>
+
+<pre><code>Bain~\shortcite{358_frozen} used a space-time transformer to 
+Given an unlabeled video dataset $\mathcal{D}=\{x_i\}_{i=1}^N$,
+where each instance $x_i$ has two modalities: voice $x^v_i$ and face $x^f_i$.
+</code></pre>
+
+<h2 id="本地部署">本地部署</h2>
+
+<ul>
+<li>演示页面无法保证一直可用，所以推荐下载到本地，用浏览器打开<code>index.html</code>就可以<img src="https://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em"></li>
+<li>转换由浏览器本地实现，不会向服务器发送内容，主要功能实现在<code>js/latex_util.js</code>，可以根据自身的需要补充功能<br /></li>
+<li>需求是众口难调的，所以有生之年不会有更新</li>
+</ul>
+
+<h2 id="相关解决方案">相关解决方案</h2>
+
+<ul>
+<li><p>Overleaf平台有个Chrome插件：<a href="https://chrome.google.com/webstore/detail/overleaf-textarea/iejmieihafhhmjpoblelhbpdgchbckil">Overleaf textarea</a>
+特点：功能强大，也更具破坏性<img src="https://cdn.huacishu.com/img/bili_妙哇.png" style="height: 1.5em"></p></li>
+
+<li><p>VSCode插件：<a href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly for VS Code</a></p></li>
+
+<li><p>命令行方式将<code>.tex</code>文件转换为文本（不可逆）
+pandoc: <code>pandoc --to=plain --wrap=none your_file.tex</code>
+detex: <code>detex your_file.tex &gt; your_file.txt</code></p></li>
+</ul>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;"></p>
+                    
+                </div>
+            </div>
+
+
+            <nav class="post-pagination">
+
+              
+                  <a class="newer-posts" href="https://www.huacishu.com/blog/2023/03/20/my-yy/">
+                    <br>我的猫猫(2)
+                  </a>
+              
+
+                
+                    <a class="older-posts" href="https://www.huacishu.com/blog/2022/08/22/rethink/">
+			              <br>反思我开发了五年的软件是如何终结的
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

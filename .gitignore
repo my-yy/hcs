@@ -1,7 +1,8 @@
+1_hugo_blog/
 #idea
 .idea
 wandb/
-
+.DS_Store
 
 
 # Logs

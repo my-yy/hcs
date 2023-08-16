@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>花辞树</title>
+    <link>https://www.huacishu.com/blog/about/</link>
+    <description>Recent content on 花辞树</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 01 Jan 2000 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.huacishu.com/blog/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于</title>
+      <link>https://www.huacishu.com/blog/about/me/</link>
+      <pubDate>Sat, 01 Jan 2000 01:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/blog/about/me/</guid>
+      <description>如果今天是人生中的最后一天
+我就买瓶可乐
+上午看bilibili[]~(￣▽￣)~*
+下午打CS
+人生的最后再回忆一下和猫猫在琉璃厂的晚上…
+ </description>
+    </item>
+    
+  </channel>
+</rss>

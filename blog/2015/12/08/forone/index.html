@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><head>
+<title> 我的Android自学之路 </title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/scss/journal.scss" integrity="" media="screen">
+
+
+
+<link rel="stylesheet" href="/blog/scss/dark-mode.scss" integrity="" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://www.huacishu.com/blog">
+    
+        <div class="nav-title">
+            花辞树
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/about/me/">
+                关于
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/about/me/">
+                    关于
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://www.huacishu.com/blog">
+            花辞树
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://www.huacishu.com/blog">
+        <div class="single-column-header-title">花辞树</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                     我的Android自学之路 
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            
+                        </time>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p>有自己做软件（拾忆笔记）的打算后,2013年高考后的暑假，我开始尝试用VB来做，因为在初中时有自学过一点VB，可毕竟学的只是皮毛，一开始就卡在了富文本编辑器上，感觉自己水平太差，于是退一步，转而自学C语言，但因为方法不得当，未有所收获。</p>
+
+<p>大一多出于对大学的新奇，天天泡在自习室里，期间虽有接触iOS，看了语法书，跟着弄出来一个Hello World，然后，书上写的就看不懂了=。=，另外又因为自己的决心与动力不足，未果~ 大二开学前一天，突然冒出想法，想要为喜欢的女孩做款小软件^_^，可是没钱买iPhone。。。</p>
+
+<p>-.-，于是舍弃iOS，兴冲冲的去学Android啦. 情绪上的驱使给了我无穷的动力与巨大的决心，用了十多天装上AndroidStudio，闯过安卓学习道路上的第一道槛，后又花两百多买了台安卓机，自此开始Android自学之路。</p>
+
+<p>虽然有VB编程基础，外加大一所学的计算机知识，可我基本还是什么都不会，真可怕——对 &ldquo;面向对象&rdquo; 一知半解，回调与线程一概不知。不过当时我凭着中二精神，跳过了Java语法，在优酷找了套教程直奔Android开发，而不是像学iOS时那样先从图书馆找本语法书看。 （我现在觉得这才是正确的学习方法，Java只是Android用来解决问题的一个工具，在没有了解问题之前，先去学习工具是乏味而无重点的；只有当对问题有了一定了解，有了困惑，转而回头学习工具，才会有针对性以及更浓厚的兴趣和更深的理解。）</p>
+
+<p>大二课很少（外加有的课我也不去），于是常常一个人带着我的小超级本（外加充电器）去自习室，把视频2倍速过一遍，截屏下来照着敲，不知不觉一下午就过去了，然后晚饭过后回自习室接着弄，直到教学楼关门，而周末的时候就干脆在宿舍敲两天代码。 在学习Android中我逐渐积累了很多对Java的困惑，于是转而回头自学Java语法，从Mars老师的Java4Android开始，后又看了李兴华老师与马士兵老师的相关课程，对Java有了个大概了解，同时也体会到向不同老师学习的重要性。</p>
+
+<p>没VPN，Developer网站上不去，我能获知Android 中&rdquo;未知领域&rdquo;的途径只有视频教程与书籍扫描版的PDF，可是视频教程多讲基础，书籍则是看不懂外加讲基础，导致我在Android学习上进程缓慢。 当时有曾尝试使用GitHub，不过参考教程说的不透，自己用AS一导入GitHub项目就报错误，没办法运行，我只能新开一个工程，再将人家的源代码、xml一点点复制进去来运行，这种感觉太痛苦。</p>
+
+<p>于是乎，我便开始了造轮子之旅-.- 比如，我不知道有viewPager这个东西，想实现翻页效果，于是捣腾半个多月，自己算加速度配合三个View去实现翻页效果，至此实感Android开发真是有难度呀….以至于我后来见到有ViewPager这东西的时候异常兴奋，简直是重生了对安卓的希望~</p>
+
+<p>到15年寒假，我做出了那个小软件，虽然和预想的差距太大。。。。不过，在此时安卓上面我也有了一定基础，于是进而我开始在安卓上制作&rdquo;拾忆笔记&rdquo;第一版，但直到寒假结束，也只弄出一个&rdquo;半成品&rdquo;：</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android1.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android2.png" alt="" /></p>
+
+<p>（主页面)</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android3.png" alt="" /></p>
+
+<p>（&rdquo;图片裁剪&rdquo;页面)</p>
+
+<p>正如你所见：</p>
+
+<ol>
+<li><p>从界面上说它太丑了-.-</p></li>
+
+<li><p>从功能上说呢：</p>
+
+<ol>
+<li><p>内部逻辑太复杂，没能把复习模块整合进去</p></li>
+
+<li><p>图片裁剪页面，我仿的iOS图片裁剪（是的，看起来不怎么像），当裁剪到一定大小会引起程序崩溃</p></li>
+
+<li><p>关于图像的&rdquo;扭曲矫正、增强锐化&rdquo;，我不知道原理，没能力去实现它</p></li>
+
+<li><p>相机模块没能实现点按对焦，developer的解释真是极简，而Stackoverflow上则是写啥的都有，实在看不懂…</p></li>
+
+<li><p>….</p></li>
+</ol></li>
+</ol>
+
+<p>总之，这个东西远远达不到要求，即便是单纯拿来当个相册用…而这就是我花了1000多小时，自学半年后的成果&gt;<em>&lt; 大二下学期，被拉去参加学校的&rdquo;PPT创业大赛&rdquo;^</em>^，在App界面研究上我投入不少心力，初识DrawerLayout与PagerIndicatior，总算是做了一个界面&rdquo;能看&rdquo;的App。（话说这个界面布局写的可真痛苦！）</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android4.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android5.png" alt="" /></p>
+
+<p>比赛最大的收获是结识了一个Java EE方面的高手，话说见识到真正的高手才能有所提高，他给了我莫大的启发，另外由他介绍，我加入了学校的一个创业团队，从而我也有了更好的学习环境（不过我觉得还是自习室更适合写代码~），期间根据团队需要我做了另一款软件：</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android6.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android7.png" alt="" /></p>
+
+<p>多少摸索出了软件的大体构架设置，接触了蓝牙通信、Service、图片模糊处理….，但其中的最大的收获是，我终于摸索出了怎么调AndroidStudio的&rdquo;软件设置&rdquo;，真是一大进步。 自学安卓以来我一直面临一个严重问题：AndroidStudio中写的代码无法像Intellij那样直接在另一个项目重用。这个问题严重影响我的效率，因为如果我想重用以前写的代码或者xml布局，我只有两条路可走：</p>
+
+<p>1.将文件一个个复制到新项目，并且复制过后还要修改import xxx.R</p>
+
+<p>2.在新项目引用一个Library Module，之后，AS用起来就慢死个人，慢死个人，慢死个人。。。 深受该问题烦恼，我决定通过深入学习来寻找解决之道，于是暑假开始学Maven，因为我隐约感觉到解决之道就在这个地方， 但是学完后虽懂得了各种pom标签，让人头晕的生命周期，但究竟如何与AS相联系？</p>
+
+<p>真是迷茫。因而我进一步去学Gradle。。在看了几本书后发现依旧解决不了自己的问题，感觉书里重语法而轻实践，在实际项目中的应用少有涉及；且Gradle精髓在于其插件，但官网的插件说明写的可真是简练……</p>
+
+<p>于是，我决定自己做个软件解决掉它： 整体思路——在电脑上建立一个文件库，点个按钮就把里面的xml、java文件通通复制到新工程，顺便修改import信息，更新旧版本什么的， 于是我跑去学Swing，捣鼓了三四天： <img src="https://cdn.huacishu.com/2015/12/120815_1301_Android8.png" alt="" /></p>
+
+<p>结果嘛，整体上没啥大问题，但用起来就是不踏实，复制来复制去，搞得心里没底。  所以，我决定这个问题暂且搁置，先去解决其它方面的问题。（我发现每当在Android上遇到无法逾越的障碍，就横向去学点其它的，过段时间有了新见解，障碍也就消除了。）  对我而言，图片处理也是一个大问题，为此我请教过计算机系的同学，可是呀…哎…问题没解决。于是我在VeryCD找了份中科院数字图像开始自学，  <img src="https://cdn.huacishu.com/2015/12/120815_1301_Android9.png" alt="" />  看了不到一半看不下去了，虽理论上能猜个半懂，但操作上却一概不知，无奈作罢。而后又去看了烟台大学一位老师的数学建模，也算是有点收获吧，起码是对matlab有了点了解。不过这都是副产品，真正的收获是我遇到了转机，因为期间偶然看到一篇介绍Android技术的文章，从而&rdquo;重新&rdquo;发现了新天地——GitHub，在此时，前期学的Gradle派上了用场，我终于弄通了如何使用GitHub上的项目，由此我在安卓学习之路步入坦途。  RxAndroid、ORMLite、AndroidAnnotation、UniversalImageLoader通通被我收入囊中，进而，我拆了OpenCamera，搞定了相机点按对焦，然后又拆了TextFariy，搞定了增强锐化，顺便也把Git学了，另外从StickerCamera上面，在软件构架上受到很大启发….  于是乎，要用到的几个模块就这么被凑齐了^_^ ，不过此时，我发现自己又遇到了之前的那个人问题：  我无法重用这些模块，甚至不能靠粘贴复制来解决，因为有俩模块复杂到无法复制。如果作为library，那么我的电脑根本就带动它，它太大了，编译一次就得半个钟头。  这个问题始终横亘在我的安卓之路上，而且似乎是个无解的问题，  安卓这条路走了一大半了，就要到终点时却发现前方死路一条，无路可走了，真是百感交集！  学了Android近一年，投入2000多小时，却连个TitleBar都要自己做，连一个像样的提示框都写不出来，  感叹同样的一个东西，为什么安卓上实现起来就那么难，为什么谷歌做的东西就这么烂，为什么安卓上有这多障碍…  我一度停顿了半个多月，在临近大三开学之时，一向幸运的我找到了新途径：将各个模块打包成aar包，发布到本地maven库，然后在主项目中引用它们。  哈哈，问题解决，此时&rdquo;拾忆笔记&rdquo;主要技术已经掌握，不过还没有界面设计。关于界面与交互，我总有更好的想法冒出来，可这些想法又受到技术与时间上的制约，我画了许多设计草图，但效果却总不尽如人意。可没有确定的界面，App就无法继续做下去，项目再次停滞，虽然技术上离目标越来越近，但内心却感觉目标越来越难以实现，心里真是慌乱。不过几天之后，心慢慢静下来，发觉如果尚没有满意的设计，那就先从不满意开始。我现在需要的是从0到1的突破~  于是花了一天边学边做，用JustInMind搞定了第一版界面：</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android10.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android11.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android12.png" alt="" /></p>
+
+<p>有了界面之后，就可以开工写代码了~ 在此期间，经过技术实践与设计理念的相互磨合，并一路搞定jni、混淆、图标、备份、以及杂七杂八的细节问题，于15年十月下旬做出了第一个版本，并在此基础上纠正了好似无穷无尽的小问题，搞出了第一个公测版：</p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android13.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android14.png" alt="" /></p>
+
+<p><img src="https://cdn.huacishu.com/2015/12/120815_1301_Android15.png" alt="" /></p>
+
+<p>诚然第一版有很多不足，比如：</p>
+
+<p>1.自动提醒功能在我的魅族手机上失效（天知道是为啥…）</p>
+
+<p>2.笔记列表页操作不便（因为实现理想的交互效果要耗费很多时间，先保证&rdquo;可用&rdquo;，再保证好用嘛，在第一版我做出了妥协）</p>
+
+<p>3.没有实现真正意义上的同步功能（当前的同步只是将数据库的.db文件整体上传到服务器，而不是针对具体条目。）</p>
+
+<p>自学安卓一年多，投入两千多小时，跨越无数障碍，多次感觉障碍之大，莫非奇迹出现，自己难以逾越，不过幸运的是，奇迹一直出现，在我束手无策一俩星期，一个俩月、半年一年之后奇迹就出现了~ 想想那么多时光。。。 如果当初没接触安卓，继续沿着以前的路线，把教材刷几遍，然后期末考个漂亮的分数…如今我却用它换来了一款软件，还不咋成熟，可谓&rdquo;值得&rdquo;？</p>
+
+<p>可惜没如果</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;"></p>
+                    
+                </div>
+            </div>
+
+
+            <nav class="post-pagination">
+
+              
+                  <a class="newer-posts" href="https://www.huacishu.com/blog/2015/12/11/mymemo/">
+                    <br> 拾忆笔记 
+                  </a>
+              
+
+                
+                    <a class="older-posts" href="https://www.huacishu.com/blog/about/me/">
+			              <br>关于
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>

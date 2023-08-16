@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html><head>
+<title> 对复习的一些思考 </title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/blog/vendor/css/bootstrap.min.css">
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/scss/journal.scss" integrity="" media="screen">
+
+
+
+<link rel="stylesheet" href="/blog/scss/dark-mode.scss" integrity="" media="screen">
+
+
+<script src="/blog/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/blog/js/toc.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://www.huacishu.com/blog">
+    
+        <div class="nav-title">
+            花辞树
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/blog/about/me/">
+                关于
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%ae%ba" onclick="onNavClick(`#结论-nav`)" id="结论-nav">
+									结论
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%97%a0%e8%b6%a3%e7%9a%84%e5%ae%9a%e4%b9%89" onclick="onNavClick(`#无趣的定义-nav`)" id="无趣的定义-nav">
+									无趣的定义
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%8e%a8%e8%ae%ba" onclick="onNavClick(`#推论-nav`)" id="推论-nav">
+									推论
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#q-a" onclick="onNavClick(`#q-a-nav`)" id="q-a-nav">
+									Q&amp;A
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/blog/about/me/">
+                    关于
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>-  -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e7%bb%93%e8%ae%ba" onclick="onNavClick(`#结论-nav`)" id="结论-nav">
+									结论
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%97%a0%e8%b6%a3%e7%9a%84%e5%ae%9a%e4%b9%89" onclick="onNavClick(`#无趣的定义-nav`)" id="无趣的定义-nav">
+									无趣的定义
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%8e%a8%e8%ae%ba" onclick="onNavClick(`#推论-nav`)" id="推论-nav">
+									推论
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#q-a" onclick="onNavClick(`#q-a-nav`)" id="q-a-nav">
+									Q&amp;A
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://www.huacishu.com/blog">
+            花辞树
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://www.huacishu.com/blog">
+        <div class="single-column-header-title">花辞树</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                     对复习的一些思考 
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            
+                        </time>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    
+
+<p><strong>以下内容仅供存档，所述内容可能已经不具时效性</strong></p>
+
+<hr />
+
+<p>本文写的是述拾忆笔记软件所依循的原理，解释了为何不含遗忘测算功能的“定间隔算法”为何效率更高。</p>
+
+<hr />
+
+<h2 id="结论">结论</h2>
+
+<p><strong>1.四种常见的学习模式：</strong></p>
+
+<p>1）平时不学习，考前疯狂学习
+2）平时学习但不复习，考试前总复习
+3）平时学习并通过多次复习将所记忆内容始终保持在遗忘限度之上（利用SuperMemo等软件），考前不复习或少量复习。
+4）平时学习且进行复习，允许对部分记忆内容的熟悉度降低到遗忘线之下，考前适当复习，快速拾起。</p>
+
+<p>1、2适合难度较低的考试<strong>（</strong>如大学期末考试），我在这篇文章<a href="http://www.huacishu.com/2016/03/03/first_attempt/">《我是如何40天自学完5门课程的》</a> 采取的第2种方式，在开学前搞定了该学期的课程，上课时便很少去过，期末考试重看所做的笔记、思维导图，将知识点拾起来，通过考试。但在考试前将所学知识拾起来是耗费了一定精力的，因为中间不曾主动复习过，知识架构已变得生疏，有的知识点更是毫无印象，必须重学一遍，并且掌握也不深入。
+学习（应试）分两个阶段：新学、重学。第2种方式只是停留在新学阶段，缺少重学阶段的融会贯通，但毕竟之前学过一次，顺利通过考试，分数不高而已。</p>
+
+<p>3、4适合具有难度的考试，难度体现在 “试题难度高”、“备考时间有限”。容易理解，使用1、2种方法应对此类考试，若非天赋过人则是对考试失败已持有淡然之心。而在3、4之间，4的效率更高，因为3是在追求“全程记忆”（从学习到考试的全过程中将记忆材料保持在遗忘限度之上）而4则充分发挥了<strong>考前复习的力量</strong>。试题、笔记属于“大体量记忆材料”，此类材料之间存在干扰现象，使得遗忘预测结果并不精确。即使理条件想化，遗忘预测算法精确而合理，针对一些具有难度的记忆材料，依旧要耗费很大精力才能被最终记忆。这就好比“吃8个馒头才饱是客观规律”，不会因吃的有节奏而改变。但考试中往往不需要对记忆材料保持此种高度的熟悉程度（全程记忆）。在考试中（“中考”、“高考”、“研究生考试”等旨在测定对所学理论“理解与应用能力”的考试，而非纯粹的记忆性考试，如“成语比赛”、“知识竞赛”），一个知识点考试前掌握跟几个月来一直被掌握，结果可能是相同的，甚至与考前未掌握相同（因为知识点繁多，并非所有知识点都会被考察），此外备考时间精力有限，也容不得去修炼“一网打尽”的功夫，与其将记忆材料保持在遗忘线之上，不如降低要求，将节省下来的时间拿去搞“题沟战术”。</p>
+
+<p><strong>何时记得不是记得，何时学会不是学会？在复习时发现已经忘记并不可怕，通过这几次具有时间跨度的复习，你已经对所学内容有了一定的熟悉度，在考前你会以更高的速度将其拾起，并保持更长的时间。</strong>你需要的是在需要使用这些知识时，得到这些知识，即在最后关头（考前）将它们带起来，顺利通过考试。</p>
+
+<p><strong>2.拾忆笔记Lite的适用范围：</strong></p>
+
+<p>“拾忆笔记Lite”基于第4种思想，适用于“<strong>具有一定时间跨度且具有难度的考试</strong>”。 我在备考研究生时重度依赖拾忆笔记，构建了“ GREKit” 、“难句Kit”、“例题Kit”等模块，它们对我帮助巨大。一方面因为考研备考是长期行为，我需要去提升自己的“保持力”，让所学到的知识、方法、见解平安度过这个长期的过程，不至于到最后遗忘殆尽。而当备考的最后一周时，我不再使用拾忆笔记，因为此时已是短期记忆，拾忆笔记并不适用。 另一个例子是在考研初试后，我准备学校期末的《基础工程》考试。在不到一周的学习时间里，我依旧没有用拾忆笔记，因为这同样属于短期记忆任务，此外考试题型固定，每天做 “新题目” 就已经是对所学过知识点的一种复习，再用拾忆笔记可谓浪费时间，得不偿失。</p>
+
+<p>所以，拾忆笔记Lite 是否对你有效，关键看你的目标：如果你被考研、公考、司考所含错综繁杂知识点整地焦头烂额，不妨试试拾忆笔记Lite；而如果你只是为了大学期末60分万岁那就不要用它，在面对这类问题时我自己都不用(ಥ_ಥ)。所谓依靠某种模式的人必须要相信这种模式，遵从这种模式，并在最后打破这种模式 ，针对不同问题，选择合适方法。 <img src="http://img.huacishu.com/fun_of_rev/an_lite_compare.png" alt="" /></p>
+
+<p>(两版拾忆笔记的对比)</p>
+
+<h2 id="无趣的定义">无趣的定义</h2>
+
+<p><strong>复习检验：</strong></p>
+
+<p>复习时对记忆效果进行评价。</p>
+
+<p><strong>大体量材料：</strong></p>
+
+<p>“单词”与“试题”是两类不同性质的记忆材料，分别归属为 “小体量材料”与 “大体量材料”。以下论述中的“复习”一词若非指明则均为针对大体量材料的复习。</p>
+
+<p><strong>复习过程的高成本：</strong></p>
+
+<p>相较于小体量材料，针对大体量材料的复习行为是极其耗费时间的（例如复习一个单词用时几秒，但将一道题目做一遍耗时几分钟），这定义为复习过程的“高成本”。</p>
+
+<p><strong>复习过程的非精确性：</strong></p>
+
+<p>小体量材料往往孤立（虽单词中不乏同义词、易混词，但比例较低），而大体量材料一般具有内在联系（例如同一个知识点被多道题目涉及），某记忆条目易受到其它记忆条目干扰，导致则该条目进行复习检验时的结果不可靠，所以针对大体量材料的复习行为的发生是随机的、复习检验结果是非精确的。</p>
+
+<p>例如：题目A、B具有联系，且A 定于第5日进行复习检验，若在第4日学习B，且B涉及与A相同知识点，则A于第5日的检验结果失效（此时A将具有超常的熟悉度），“试题A” 的检验结果是不被信赖的，真正的复习过程发生在第4日。同理，若在第6日学习B，且因B涉及与A的易混知识点导致A发生 “遗忘”，则A于第5日的检验结果失效。</p>
+
+<p>此外，复习过程的非精确性为复习过程的非长久性提供了解释（例如发生了“例题替换”，“例题A” 被新的 “例题B” 所替代，则“例题A” 复习过程被中断）。</p>
+
+<p><strong>复习过程的非持久性：</strong></p>
+
+<p>学习具有两个阶段：</p>
+
+<p>1）新学——侧重对各孤立知识点的学习，明晰各孤立部分的内在的逻辑，缺少知识点之间的联系。</p>
+
+<p>2）重学——重建知识点之间的联系。</p>
+
+<p>第一阶段反应学习的“粒子性”，粒子性决定复习是必要的（为第二阶段的基础）； 第二阶段反应学习的“反复性”，反复性决定复习过程是复杂的、反复的、非持久的（例如复习计划经常变动、替换现象时常发生、复习效果难以预测）。</p>
+
+<hr />
+
+<h2 id="推论">推论</h2>
+
+<p><strong>1.小体量材料复习理念的破灭</strong></p>
+
+<p>复习的高成本、非持久、非精确性决定了小体量材料的复习理念—— “依靠复习检测预测复习日期，使记忆水平持续保持在遗忘限度之上” 不可取。复习的高成本与非持久性导致评分样本数量不足、复习的非精确性导致复习检测结果不可信。</p>
+
+<p><strong>2.复习安排的非精确性</strong></p>
+
+<p>复习过程的非精确导致复习安排的非精确性，即复习安排不必精确、复习安排拥有灵活性。 复习过程的高成本决定复习条目数量应有限、复习行为应低频。这导致记忆目标的变化，<strong>在记忆目标上从 “不能忘” 到 “允许忘”，允许“先忘记”等用到时再 “拾起来”，允许部分条目的熟悉程度降低到 “遗忘线” 之下，每次复习从关乎“复习效果”到关乎“复习过程”。</strong>基于此，复习安排并不需要一个精确的间隔，而是一个较长的间隔，但也不至于长到导致复习时毫无印象。</p>
+
+<p>  <strong>3.在复习安排上引入定量与计划</strong></p>
+
+<p>在复习安排的非精确性、复习过程的高成本上得以引入新概念——<strong>定量与计划。</strong>通过有计划的安排每日的录入数量，合理分配复习任务，使得复习具有持续性（例如 “例题Kit”中的压力测算机制）。实践而言，对于大体量材料定量与计划远比评分预测更重要。</p>
+
+<p><img src="http://img.huacishu.com/fun_of_rev/relation.png" alt="" /></p>
+
+<p>(关系示意)</p>
+
+<hr />
+
+<h2 id="q-a">Q&amp;A</h2>
+
+<p><strong>1.如何提高大体量材料的复习效率？</strong></p>
+
+<p>1）降低检验样本的数量：只复习重要例题，并放弃一部分未检验通过的例题。基于 “定量思想” 与 “复习压力测算” ，合理安排新条目的录入。</p>
+
+<p>2）降低检验频次：复习间隔采用大跨度、复习次数应少量，不要把复习战线拉得太长，不要忽视考前复习的力量。</p>
+
+<p>3）降低检验成本：对例题进行改编，若原有计算过程复杂而关心的是整个解题流程，则改编题目为较简单的形式。</p>
+
+<p>  <strong>2.如何确定复习间隔?</strong></p>
+
+<p>“短间隔参照时间、长间隔参照倍数(2~3倍)，采用大跨度”</p>
+
+<p>比如进行5次复习，每次相较上一次的间隔为：1,5,15,30,50 ，则从第一次复习到最后一次复习的时间跨度为101天（1+5+15+30+50），且完成最后一次复习后能保证未来 2~3个月 (50~2*50 )对该条目的一个基本的熟悉度。即该间隔覆盖了 5~6个月。这个时间跨度是合理的，因为长时间复习（复习战线太长）则意味没发挥考前复习的力量，效率低下。</p>
+
+<p>针对这个间隔进行分析： 1-&gt;5：五倍关系，间隔5天，属于短间隔，隔5天不看不会毫无印象，所以这里倍数定的较高。 5-&gt;15 ：三倍关系，同理间隔15天并不算太长。 15-&gt;30：两倍关系。 30-&gt;50： 小于两倍关系。“劣化”不可避免，时间越长劣化的程度越高，间隔长跨度后的复习检验成果一般不佳，你发现自己已经遗忘，但你同样能感受到该复习材料可以被快速 “带起来”并保持一定时间，这就是 “周期性复习” 所达到的目标，在最后用到时的不忘。</p>
+
+<p><strong>3.基于“评分” 的 “遗忘测算”被抛弃了吗 ？</strong></p>
+
+<p>不，应该在 “计划” 的基础上进行 “预测”，<strong>计划定“底线”，测算估“上限”</strong>。在一年多以前做拾忆笔记Android版时，我看到了复习过程的 “高成本”却忽视了复习过程的“非精确性” 与 “非持久性”，软件虽涉及 “计划”功能，但只是在既有“遗忘测算”理念上的微小变通， 本质仍是小体量记忆材料的复习理论——全程记忆（或全程印象），理念的错误导致该版本在效果上并未达到预期。“拾忆Lite” 是现在的最新版，也是我考研时所依靠的。我并未在上面引入“遗忘测算”，一是自身精力与视野所限，测算是个复杂的问题，它需要用 “复杂而神奇的方法” 来解决；二是我希望它足够简单直观 （正如引入的 “Pluggable ”设计思想）。实践证明它的效果已经很棒了（较之于Android版），因为它以计划为基础，建立在了正确的理念之上，但也同样由于 “计划”为基础，其效果在很大程度上也被 “计划” 所决定 ，遗忘测算沦为了 “加分项” 。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;"></p>
+                    
+                </div>
+            </div>
+
+
+            <nav class="post-pagination">
+
+              
+                  <a class="newer-posts" href="https://www.huacishu.com/blog/2017/04/29/kylite_swing/">
+                    <br> 拾忆笔记Lite 
+                  </a>
+              
+
+                
+                    <a class="older-posts" href="https://www.huacishu.com/blog/2017/04/01/crusade1/">
+			              <br> 三个月跨考中国人大 
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+<a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer noopener">津ICP备15007777号</a>
+<br>
+&copy;
+	
+	2023 花辞树
+	
+</div>
+            </div>
+    
+    <script src="/blog/js/journal.js"></script>
+    </body>
+</html>
