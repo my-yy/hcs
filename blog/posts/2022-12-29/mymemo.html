@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花辞树</title>
+    <style>
+        .beian {
+            text-align: center;
+            /*position: fixed;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+
+<h1>拾忆笔记开源计划：拾忆笔记2 Mac版</h1>
+<div>2022-12-29</div>
+<hr>
+<div><p><strong>下载地址</strong></p>
+<p><a href="https://github.com/my-yy/SeaNote/releases/download/2.0.1/SeaNote2.0.1-Intel.dmg">Intel芯片版本</a></p>
+<p><a href="https://github.com/my-yy/SeaNote/releases/download/2.0.1/SeaNote2.0.1-AppleSilicon.dmg">M1\M2芯片版本</a></p>
+<p><strong>前言</strong></p>
+<p>一个多月前回顾了一下以前写的“拾忆笔记”App代码，觉得烂在硬盘里有些伤感，整了好久最终也没剩下什么。
+平台已经不打算再做了，于是乎打算改个单机版开源了吧，万一有人需要呢<img src="https://cdn.huacishu.com/img/bili_妙哇.png" style="height: 1.5em"></p>
+<p>为此就有了“拾忆笔记2”这个版本，以现有联网版本为基础，删去了那些难以维护或是依赖于网络（如印象笔记）的功能，借鉴了一下之前写的“<a href="https://www.huacishu.com/2022/08/21/anya_memo/">AnyaMemo</a>”链接复习小工具。最后大部分代码可以重用，主要工作量就在于改改界面了 -。-</p>
+<p><strong>特点：</strong></p>
+<p>1）免费、开源、单机。笔记数据保存在本地，且支持iCloud、坚果云、Git  这类工具进行数据同步</p>
+<p>2）基于富文本编辑器（Froala），支持“答案分割线" 、"高亮文字挖空” 操作 </p>
+<p>3）支持两类复习算法（固定间隔、Anki），在复习时可以自由调整算法的时间安排</p>
+<p>4）采用开放的文件格式（HTML）设计，没有使用数据库，可通过"文件管理器"直接管理笔记<img src="https://cdn.huacishu.com/img/bilibili爱心.png" style="height: 1.5em"></p>
+<p><strong>开发进度：</strong></p>
+<p>打算只搞Mac与iOS两个平台 ，一是主观上水平不够，不一个人搞那么多平台的事儿了；二是没有多少时间投在上面，主要打算还是先把博士学位混下来好去忽悠人<img src="https://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em">。</p>
+<p>整体开发计划分三期，大体思路是"先可用，再易用"：</p>
+<p>| 第一期（2023年2月） | Mac 与 iOS 核心功能实现                                      |
+| ------------------- | ------------------------------------------------------------ |
+| 第二期（2023年5月） | Mac 辅助功能实现（现有联网版数据导入、Word格式导出、检索、星标、树视图） |
+| 第三期（2023年7月） | 提高稳定性、细节优化 ，不再引入新功能                        |</p>
+<p>目前Mac版本已实现了核心功能。
+iOS主体完工，不过打算先放一放有空写写自动化测试以防有恶性Bug (⊙ˍ⊙) 。</p>
+<p><strong>适配其它平台</strong></p>
+<p>桌面端用前端技术（Vue2+Electron）实现，不涉及平台特定的API，因此适配到Windows应该比较简单。而Linux或许可以直接运行起来，感兴趣的朋友可以贡献一波~(oﾟ▽ﾟ)o</p>
+<p><strong>开源地址：</strong>
+https://github.com/my-yy/SeaNote</p></div>
+
+
+<div class="beian">
+    <a href="http://beian.miit.gov.cn/">津ICP备15007777号</a>
+</div>
+
+
+</body>
+</html>

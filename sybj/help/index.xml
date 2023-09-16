@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>首页 on 帮助文档</title>
+    <link>https://www.huacishu.com/sybj/help/</link>
+    <description>Recent content in 首页 on 帮助文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://www.huacishu.com/sybj/help/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/2526/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/2526/</guid>
+      <description>完结散花 软件将于 2024年8月20日下线
+目前最新版本： 1.0.73，下载地址： https://huacishu.com/sybj/</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/2526_bk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/2526_bk/</guid>
+      <description>跑路公告 省流：新版本已经发布；软件计划在2024年8月20日后下线。
+这个APP已经近一年没有更新了，遇到了很多变故，当然，深层原因是对软件开发失去了热忱，所以到现在才发布了新版本（1.0.73）：
+https://huacishu.com/sybj/
+这个版本的特点是解除了所有付费功能限制（未到期的年费用户可以联系我提供退款；此外如果之前付费觉得亏了的也可以退~）
+未来会提供更完善的数据导出功能；不过由于不想跟苹果客服打交道，所以不再提供新的iOS版本。
+我是从2014年的那个时候开始着手做这个APP的，定到三年后的2024，是凑个10年吧。如今回头再看，折腾这么久，主要原因是方法没找对。有策略上的不足，也有技术选型上的失误，应该“先这样、然后再这样、再接着这样&amp;hellip;“，终归是自己的水平太凹了&amp;hellip; (￣▽￣)&amp;quot;
+不过也不是很悲伤，在K12禁令之前已经靠“遗忘算法API”把投入一股脑赚了回来&amp;hellip;
+不打算继续投入下去的主要原因在于，一年多前找到了一种新的学习方法，之后没有再继续用过它，如今感觉这类基于遗忘曲线的软件已经意义不大了。
+此外，如今还面临新的人生症结，有仇要报，也有东西要找回来，没有过多精力继续投入了，因此，它就这样完结了。
+2021年9月14日</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/about/</guid>
+      <description>关于 拾忆笔记的设想源于2010年，
+第一个版本发布于2015年12月11日，
+目前的4个客户端APP+服务器端均由个人开发(●￣(ｴ)￣●)
+（详见博客文章:《拾忆笔记的前世今生》)
+搞不下去了，
+计划2024年要跑路了
+完结散花✿ヽ(°▽°)ノ✿</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/devonthink/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/devonthink/</guid>
+      <description>DEVONThink 在桌面端获取链接 x-devonthink-item://E438B3B8-349C-48BF-BE3F-DE8A51B2FCA3</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/evernote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/evernote/</guid>
+      <description>拾忆笔记ღ印象笔记 基本操作 首先，在拾忆笔记中授权访问印象笔记：
+授权成功后将显示印象笔记的最新内容，点击右侧“选择笔记本”，将其添加到拾忆笔记：
+添加完毕后，将会创建一个“复习笔记”，该笔记默认会在明天安排第一次复习，如下所示：
+进阶操作 默认添加到的笔记本 点击“选择笔记本”时每次都会询问，通过设置“默认添加到的笔记本”可以直接在印象笔记“笔记本”与拾忆笔记的“笔记本”之间建立对应关系：
+在印象笔记中@sybj 在印象笔记中为笔记标记“@sybj”标签，即可在拾忆笔记中自动创建复习笔记
+注：
+1.添加@sybj标签仅首次有效，删除\重复添加标签均不会重复创建复习笔记
+2.该功能仅适用于印象笔记中国版，不适用于印象笔记国际版账户
+常见问题 拾忆笔记会存储印象笔记内容吗？ 向拾忆笔记中添加印象笔记仅是创建了一个内容为印象笔记链接的复习笔记，笔记预览数据仅缓存于客户端本地
+授权访问印象笔记是必须的吗？ 非必须；授权仅应用于：1）在拾忆笔记中显示印象笔记内容 2）在印象笔记中@sybj
+如何断开与印象笔记的连接？ 在“笔记本页”点击“断开与印象笔记的连接”</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/ithoughts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/ithoughts/</guid>
+      <description>拾忆笔记ღiThoughts 在桌面端获取链接 在移动端获取链接 注意:
+目前iThoughts iOS版本存在问题，如果导图存储位置为iCloud，则无法通过链接打开导图。 该问题已反馈至iThoughts开发人员。
+第一步 第二步 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/marginnote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/marginnote/</guid>
+      <description>拾忆笔记ღMarginNote 在移动端获取链接 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/onenote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/onenote/</guid>
+      <description>拾忆笔记ღOneNote 由于OneNote API 发生变动，自1.0.72版本临时移除对OneNote的支持
+基本操作 由于OneNote API存在缺陷，目前无法在拾忆笔记中访问OneNote 手写笔记
+不推荐的操作 由于OneNote客户端存在先天缺陷，通过OneNote客户端手动获取的笔记链接仅可用于跳转OneNote客户端，无法在拾忆笔记中直接预览。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/onenote2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/onenote2/</guid>
+      <description>Onenote 在桌面端获取Onenote链接 链接内容包含两项：
+https://onedrive.live.com/view.aspx?resid=9FF8240F7C8DA7F7%21106&amp;amp;id=documents&amp;amp;wd=target%28%E6%96%B0%E5%88%86%E5%8C%BA%201.one%7C9E7BF5B9-A10B-0645-9570-FDBC55319287%2Fpage2%7C0F51984A-7E6D-8140-B9AE-6EFD5EA47EE6%2F%29
+onenote:https://d.docs.live.net/9ff8240f7c8da7f7/我的笔记本/新分区%201.one#page2&amp;amp;section-id={9E7BF5B9-A10B-0645-9570-FDBC55319287}&amp;amp;page-id={0F51984A-7E6D-8140-B9AE-6EFD5EA47EE6}&amp;amp;end
+第一条链接将在浏览器中打开笔记
+第二条链接为本地连接，可以起调桌面Onenote软件
+在移动端获取Onenote链接 链接内容仅包含一项：
+https://1drv.ms/u/s!AvenjXwPJPofai9nlGlII9f87ck
+该链接只能在浏览器中预览，无法起调移动端Onenote App</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/apps/youdao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/apps/youdao/</guid>
+      <description>有道云笔记 拾忆笔记目前尚未支持有道云笔记，仅可通过&amp;quot;分享&amp;quot;方式获取链接
+在桌面端获取链接 注意：分享内容对所有人可见
+在移动端获取链接 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/batch_upload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/batch_upload/</guid>
+      <description>批量导入 在“笔记本”中点击“批量导入内容”
+拾忆笔记支持导入.xlsx格式的Excel文件，文件第一行应包含 name、content、content2 三个字段，例如： 点击此处下载示例文件
+字段说明 name为纯文本字段，不支持图片、链接等语法；content、content2为富文本字段，支持各类语法规则
+字段含义受“笔记格式”影响，例如:
+对于“笔记”格式笔记：
+name为笔记标题，content为笔记内容，忽略content2字段
+对于“单页“格式笔记：
+content为内容字段，name、content2均被忽略
+详细情况可参照此表：</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/fun_of_rl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/fun_of_rl/</guid>
+      <description>【简明教程】复习算法 这篇文章介绍了拾忆笔记在复习算法上的设计思想
+复习材料 复习材料可以分为两类，第一类是以“单词”、“知识点”为代表的“小体量”复习材料，由于所含的知识点单一，因此复习一次所需的时间很短，例如下面的问答题：
+问：世界上第二高的山峰?
+答：乔戈里峰
+第二类是以“数学试题”、“笔记”为代表的“大体量”复习材料，由于包含了多个知识点，复习一次所花费的时间较长，复习成本较高。
+复习材料 常见例子 特点 小体量材料 单词、基本知识点 知识点单一、复习成本低 大体量材料 试题、笔记 由多个知识点组成、复习成本高 小体量材料复习算法背后的逻辑 小体量材料的遗忘规律遵循指数形式，即艾宾浩斯遗忘曲线；一段时间后的记忆保留百分比可用如下公式描述：
+计算记忆保留率的前提是测定记忆材料难度、记忆强度，因此记忆辅助软件通常会引入 “评分面板”，依靠用户的显式评分不断修相关参数。通常，相关参数的获得需要多次评分，由于小体量材料复习耗时较少，且相较于遗忘后的重新记忆成本，在时间支出上存在收益，因此高频（一天内复习多次）、多次（复习周期内&amp;gt;10次）的复习策略较为常见。
+大体量材料不应追求精确的复习算法 1.大体量材料复习成本过高
+复习算法若想较为准确地刻画复习材料的遗忘规律需要用户提供多次评分，评分次数是预测准确度的保证，但是大体量材料的复习成本较高，在复习材料数量较多的情况下，复习频繁过高会导致效率问题，因为复习行一方面会带来收益，一方面也会付出时间成本。例如不进行复习可能会导致随学随忘、收获寥寥，但拘泥于对旧知识的复习也会挤占学习新知识的时间。
+2.大体量材料遗忘规律不同于小体量记忆材料
+单一知识点符合上文介绍的指数遗忘规律，大体量材料由多个知识点构成，每个知识点有其各自的难度，因而遵循各自的指数遗忘形式，大体量材料整体的遗忘形式是则各组成部分的叠加，叠加后一般反应为线性形式，即意味着大体量材料的遗忘速度是更缓慢的：
+这一结果可以从两方面直观地解释：
+1.大体量材料通常是具有意义的 指数遗忘曲线是在单词这类无意义、难以解释的材料上测得的，而大体量材料通常能够被理解与解释，因而遗忘速度较慢。
+2.大体量材料各组分之间存在“连带效应” 大体量复习材料是由多个知识点构成的集合体，且每个知识点之间存在联系，因此未被遗忘的部分会起到“提示作用”。
+由于大体量材料与小体量材料的遗忘规律不同，即导致适用于小体量材料的复习算法、复习策略并不适用于大体量材料。
+剂量与毒性 不乏这样的疑问：“我用小体量记忆算法（Anki）来记忆大体量材料（试题）感觉效果也很好呀”？
+从记忆效果上来讲必定是更好的，因为小体量记忆算法的复习周期更紧密，即复习次数更多。题目自然是做的次数越多，理解越到位，效果越好。
+真正的问题在于“复习压力”，如果仅仅记忆几十道题目，一天的复习量不会太多，小体量记忆算法同样可行，但是，如果目标是500道题目呢？假设复习一个单词，平均用时5秒钟，复习一道题目，平均用时5分钟，题目的复习成本是单词的60倍，则500道题目的复习成本相当于30000个单词，假设一天复习10道题目，则一天在复习上的投入将会花费50分钟。
+因此，抛弃小体量记忆算法是从“全局”角度出发的，为了整体效率而在单个题目的记忆效果上做出取舍。大体量材料复习过程的“高成本”迫使复习笔记数量应有限度、复习行为应低频，低频也导致记忆目标发生变化，记忆目标从 “不能遗忘” 到 “允许遗忘” ，允许“先部分忘记”等用到时再 “拾起来”，允许记忆材料的熟悉程度降低到 “遗忘线” 之下，进而，每次复习从关乎“复习效果”到关乎“复习过程”。
+更详细的讨论见《复习原理》
+复习算法 复习算法可划归为三类：
+1.自主安排：由用户自主决定复习间隔，因此并不属于“智能”的范畴，依靠的是使用者的经验，特点是灵活性高，对于并不追求算法精确度的大体量复习材料而言极为适用。
+2.经验公式：指以SM2、Anki为代表的复习算法，计算结果基于经验公式，特点是在软件代码实现上极为简单，因此较为常见。
+3.机器学习技术：即所谓的“AI&amp;quot;与&amp;quot;智能&amp;quot;，在效果上已全面超越经验公式，主要涵盖循环神经网络、[随机过程](Enhancing human learning via spaced repetition optimization)、强化学习、排队论。
+复习算法 算法性质 适用对象 预设间隔 自主安排 大体量材料 神经网络 机器学习 大体量材料 Anki 经验公式 小体量材料 SM2 经验公式 小体量材料 拾忆笔记并非为小体量材料复习而设计，出于实现难度考虑在小体量算法的实现上选用了Anki、SM2，两者都基于”经验公式“（从历史角度上来讲，Anki算法源于SM2算法），在效果上难以企及各类基于机器学习技术的算法，因此，如果你的目标是背单词，从算法角度上来讲，墨墨、百词斩之类的专业产品会是更明智的选择。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/inapphelp/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/inapphelp/latex/</guid>
+      <description>LaTeX数学符号 LaTeX 是一种用于排版的语法，该语法定义了数学符号的表达规则，例如 \sum 代表求和符号 ∑ ，\int 代表积分符号∫，示意如下：
+通过组合这些符号，可以输入复杂的数学公式（更多符号可参照LaTeX符号表）
+在拾忆笔记中，通过“$”可以插入LaTeX数学符号，例如：
+被渲染为:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/latex/</guid>
+      <description>LaTeX数学符号 LaTeX 是一种用于排版的语法，该语法定义了数学符号的表达规则，
+例如 \sum 代表求和符号 ∑ ，\int 代表积分符号∫，通过组合这些符号，可以输入复杂的数学公式，
+示意如下 （更多符号可参照LaTeX符号表）：
+在拾忆笔记中，通过“$”可以插入LaTeX数学符号，例如：
+被渲染为:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/pricing_strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/pricing_strategy/</guid>
+      <description>定价 付费点
+项目 新用户默认值 性质 价格 笔记本数量上限 5 永久买断 0.9元/个 笔记数量上限 100 永久买断 1.9元/100个 在印象笔记中@sybj 30天试用期 订阅 1.9元/月 桌面端印象笔记预览 - 订阅 1.9元/月 图片同步 - 订阅 1.9元/GB/月 付费入口
+桌面版-&amp;gt;我-&amp;gt;账户用量
+常见问题 为什么不免费？
+开发者并不靠这款软件赚钱，但是提供有价值的产品，理应获得合理的回报。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/privicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/privicy/</guid>
+      <description>隐私政策声明 本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。本应用会不时更新本隐私权政策。 您在同意本应用服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本应用服务使用协议不可分割的一部分。
+适用范围 (a) 在您注册本应用帐号时，您根据本应用要求提供的个人注册信息； (b) 在您使用本应用网络服务，或访问本应用平台网页时，本应用自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据； (c) 本应用通过合法途径从商业伙伴处取得的用户个人数据。 您了解并同意，以下信息不适用本隐私权政策： (a) 您在使用本应用平台提供的搜索服务时输入的关键字信息； (b) 本应用收集到的您在本应用发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情； (c) 违反法律规定或违反本应用规则行为及本应用已对您采取的措施。
+信息使用 (a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本应用（含本应用关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。 (b) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。 (c) 为服务用户的目的，本应用可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与本应用合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。
+信息披露 在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息： (a) 经您事先同意，向第三方披露； (b)为提供您所要求的产品和服务，而必须和第三方分享您的个人信息； (c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露； (d) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露； (e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷； (f) 在本应用平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，本应用有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。 (g) 其它本应用根据法律、法规或者网站政策认为合适的披露。
+信息存储和交换 本应用收集的有关您的信息和资料将保存在本应用及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用收集信息和资料所在地的境外并在境外被访问、存储和展示。
+Cookie的使用 (a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。 (b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。 (c) 通过本应用所设cookies所取得的有关信息，将适用本政策。
+信息安全 (a) 本应用帐号均有安全保护功能，请妥善保管您的用户名及密码信息。本应用将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。 (b) 在使用本应用网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对
+本隐私政策的更改 (a)如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。 (b)本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是本应用用户名及密码发生泄露，请您立即联络本应用客服，以便本应用采取相应措施。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/repository/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/repository/</guid>
+      <description>该功能已被移除 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.huacishu.com/sybj/help/docs/summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/summary/</guid>
+      <description>这是一篇简要的综述，汇集了常见的概念与问题，更详细的内容可参见侧边栏
+本APP计划在2024年8月20日后下线，新用户请酌情入坑。
+桌面版本下载地址： https://huacishu.com/sybj/
+如何完成复习 当笔记需要复习时会出现&amp;quot;评分面板&amp;quot;，通过点击评分面板中的按钮完成一次复习：
+加入拾忆笔记的内容一般会在“第二天”安排第一次复习，即“今天”加入的内容需要等到“明天”才会显示评分面板。
+复习模式 拾忆笔记内置了四种复习算法：
+复习算法 简介 适用对象 预设 按自己预先设定的复习间隔进行复习 大体量材料 神经网络 由神经网络算法测算下次复习日期 大体量材料 Anki 基于Anki软件所采用的复习算法 小体量材料 SuperMemo SuperMemo软件曾使用的SM2算法 小体量材料 针对复习材料选择复习模式，复习材料可以分为两大类：
+大体量材料：由多个知识点构成，复习一次花费时间较长，例如试题、笔记
+小体量材料：知识点单一，复习一次花费时间较少，例如英文单词、单个方程式
+大体量材料推荐采用 “预设” 或 “神经网络”复习算法，因为大体量记忆材料不应追求记忆效果
+这一观点可能有些 “反常识”，详细论述可参考：《【简明教程】复习算法》 《复习原理》
+小体量材料推荐采用Anki或SuperMemo复习算法，并且由于拾忆笔记并非为小体量记忆材料所设计，因此对于小体量材料，专业的SuperMemo软件可能会是更好的选择，并且若小体量材料专指单词的话，更为推荐墨墨记单词等专业词汇类应用。
+笔记本 笔记本的复习模式选项仅作为新建笔记时的默认值，与已创建笔记之间并不联动；例如某笔记本复习模式为“预设”，将其调整为“神经网络”后，并不会影响笔记本内现有笔记的复习模式。
+印象 将印象笔记添加到拾忆笔记仅是创建一个内容为笔记链接（笔记网址）的复习笔记，如：
+https://app.yinxiang.com/shard/s57/nl/2147483647/9e0d54cd-122b-409f-b02e-171c5fb8ee86/
+该笔记并无特别之处（你可以手动粘贴该网址或变动该网址为其它内容）</description>
+    </item>
+    
+    <item>
+      <title>常见问题</title>
+      <link>https://www.huacishu.com/sybj/help/docs/common_question/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.huacishu.com/sybj/help/docs/common_question/</guid>
+      <description>常见问题 安装 Windows系统提示“无法定位程序输入点 SetDefaultDllDirectories于动态链接库KERNEL32.dll 上。”
+错误原因：系统中动态链接库组件损坏或丢失
+解决途径：重新下载KERNEL32.dll(下载地址：http://www.onlinedown.net/soft/578372.htm)
+参考：http://bbs.3s001.com/forum.php?mod=viewthread&amp;amp;tid=282638</description>
+    </item>
+    
+  </channel>
+</rss>

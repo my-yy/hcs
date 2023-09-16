@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://cdn.huacishu.com/img/icon_black.png" type="image/png">
+    <title>拾忆笔记</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/vendors/linericon/style.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">-->
+    <!--  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="https://cdn.huacishu.com/font-awesome/5.8.2/css/all.min.css">-->
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="static/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="static/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="static/vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="static/vendors/popup/magnific-popup.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style>
+
+        .feature_item {
+            text-align: center;
+        }
+
+        .feature_item img {
+            max-height: 70px;
+        }
+
+        .main_iphone_ipc {
+            /*border-radius: 10px;*/
+            /*box-shadow: -4px 6px 8px #808080;*/
+            /*width: 500px;*/
+        }
+
+        .mylogo {
+            max-height: 30px;
+        }
+
+        .my_history {
+            text-align: left;
+            /*max-width: 800px;*/
+        }
+
+        .img_my_phone {
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#mainNav" data-offset="70">
+
+<!--================Header Menu Area =================-->
+<header class="header_area">
+    <div class="main_menu" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="../停泊/index_.html"><img class="mylogo"
+                                                                             src="https://cdn.huacishu.com/img/mylogo2.png"
+                                                                             alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">主页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#feature_suanfa">功能</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#video">演示</a>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="#price">价格</a>-->
+                        <!--<li class="nav-item"><a class="nav-link" href="#screen">界面</a>-->
+                        <li class="nav-item"><a class="nav-link" href="#start_download">下载</a>
+                            <!--            <li class="nav-item"><a class="nav-link" href="#my_history">历史</a>-->
+                            <!--<li class="nav-item submenu dropdown">-->
+                            <!--<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"-->
+                            <!--aria-haspopup="true" aria-expanded="false">Pages</a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>-->
+                            <!--</ul>-->
+                            <!--</li>-->
+                        <li class="nav-item"><a class="nav-link" href="https://www.huacishu.com/sybj/help/docs/summary/"
+                                                target="_blank">帮助</a>
+
+                            <!--<li class="nav-item submenu dropdown">-->
+                            <!--<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"-->
+                            <!--aria-haspopup="true" aria-expanded="false">使用帮助</a>-->
+                            <!--<ul class="dropdown-menu">-->
+                            <!--<li class="nav-item"><a class="nav-link" href="blog.html">移动平台</a></li>-->
+                            <!--<li class="nav-item"><a class="nav-link" href="single-blog.html">桌面平台</a></li>-->
+                            <!--</ul>-->
+                            <!--</li>-->
+                            <!--            <li class="nav-item"><a class="nav-link" href="#bottom_footer">联系</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--================Header Menu Area =================-->
+
+<!--================Home Banner Area =================-->
+<section class="home_banner_area" id="home">
+    <div class="banner_inner">
+        <div class="container">
+            <div class="row banner_content">
+                <div class="col-lg-9">
+                    <h2>积跬步，<br/>方能至千里</h2>
+                    <p>日拱一卒，涓涓细流方能汇成大海，利用拾忆笔记每日复习记录，在一天天的积累中巩固与提高，使得努力更有力</p>
+                    <a class="banner_btn" href="#start_download">下载软件</a>
+                </div>
+                <div class="col-lg-3">
+                    <div class="banner_map_img">
+                        <!--<img class="img-fluid" src="img/banner/right-mobile.png" alt="">-->
+                        <img class="img-fluid main_iphone_ipc" src="https://cdn.huacishu.com/img/feature/iphone2.png"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+
+<!--================Feature Area =================-->
+<section class="feature_area p_120" id="feature_suanfa">
+    <div class="container">
+        <div class="main_title">
+            <h2>主流算法，兼收并蓄</h2>
+            <p>拾忆笔记提供了流行的算法实现，你可以根据所需，选择合适的复习算法</p>
+        </div>
+        <div class="feature_inner row">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img src="https://cdn.huacishu.com/img/icon/fix-span5.svg" alt="">
+                    <h4>预设间隔</h4>
+                    <p>按照固定的间隔进行记忆，无需评分。简单、高效地记录每日所学内容</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img src="https://cdn.huacishu.com/img/icon/neural-network.png" alt="">
+                    <h4>神经网络</h4>
+                    <p>根据复习目标与评分历史，依靠搭载的神经网络引擎测算复习日期，高效记录试题、笔记</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img src="https://cdn.huacishu.com/img/icon/anki1.png" alt="">
+                    <h4>Anki</h4>
+                    <p>在Anki算法的基础上去掉了小于1天的复习逻辑，适用于“小体量”记忆材料</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img src="https://cdn.huacishu.com/img/icon/supermemo.jpg" alt="">
+                    <h4>Supermemo</h4>
+                    <p>Supermemo软件曾采用的SM2算法，适用于“小体量”材料，供比较与参考</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--================End Feature Area =================-->
+
+
+<!--================Feature Area =================-->
+<!--<section class="feature_area p_120" id="feature">-->
+<!--  <div class="container">-->
+<!--    <div class="main_title">-->
+<!--      <h2>用喜爱的软件记录，用拾忆笔记提供算法支持</h2>-->
+<!--      <p>预设间隔、神经网络、Anki、Supermemo，当拾忆笔记覆盖主流复习算法后，-->
+<!--        剩下的是什么？-->
+<!--        ——唯有提供更多的选择。-->
+<!--        你可以用自己喜欢的软件进行记录，用拾忆笔记提供算法支持，-->
+<!--        只要将它们的链接插入拾忆笔记，即可快速访问该内容-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="feature_inner row">-->
+<!--      <div class="col-lg-3 col-md-6">-->
+<!--        <div class="feature_item">-->
+<!--          <img src="https://cdn.huacishu.com/img/icon/evernote.png" alt="">-->
+<!--          <h4>印象笔记</h4>-->
+<!--          <p>连接到印象笔记，即可在移动端快捷插入印象笔记内容，并提供快速笔记预览；-->
+<!--            Android版还可自动侦测笔记内高亮文字，开启填词模式-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3 col-md-6">-->
+<!--        <div class="feature_item">-->
+<!--          <img src="https://cdn.huacishu.com/img/icon/onenote-icon.svg" alt="">-->
+<!--          <h4>OneNote</h4>-->
+<!--          <p>桌面端可自动侦测剪贴板内的OneNote笔记链接，让创建复习条目更为便捷。</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3 col-md-6">-->
+<!--        <div class="feature_item">-->
+<!--          <img src="https://cdn.huacishu.com/img/icon/marginnote.png" alt="">-->
+<!--          <h4>MarginNote</h4>-->
+<!--          <p>使用MarginNote的卡片机制重塑学习方式，将卡片链接插入拾忆笔记，可直接起调MarginNote App</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-3 col-md-6">-->
+<!--        <div class="feature_item">-->
+<!--          <img src="https://cdn.huacishu.com/img/icon/finder.png" alt="">-->
+<!--          <h4>文件系统</h4>-->
+<!--          <p>在Windows\MacOS上拖拽文件至拾忆笔记，-->
+<!--            即可创建指向该文件的复习条目。-->
+<!--            你可以将拾忆笔记当做“链接器”，利用拾忆笔记复习任何类型的文件。</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--================End Feature Area =================-->
+
+<!--================Interior Area =================-->
+<section class="interior_area">
+    <div class="container">
+        <div class="interior_inner row">
+            <div class="col-lg-6">
+                <img class="img-fluid img_my_phone" src="https://cdn.huacishu.com/img/macbookgold_front.png" alt="">
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="interior_text">
+                    <h4>发挥周期性复习的力量</h4>
+                    <p>
+                        知识点学了一遍又一遍，总也记不住？
+                        相似的题目见了一面又一面，考试中依旧没思路？
+                        那么你需要通过周期性复习，将短期记忆培养为长期记忆，
+                        将概念深深刻入脑中，消除记忆模糊，
+                        体验思如泉涌的感觉
+                    </p>
+                    <!--<a class="main_btn" href="#">详细介绍</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Interior Area =================-->
+
+<!--================Interior Area =================-->
+<section class="interior_area interior_two">
+    <div class="container">
+        <div class="interior_inner row">
+            <div class="col-lg-5 offset-lg-1">
+                <div class="interior_text">
+                    <h4>赋予复习流程更多的自由度</h4>
+                    <p>
+                        神经网络在学术领域中被称作“黑箱”，缺乏可解释性；
+
+                        Anki、SM2算法本质上属于经验公式，是否能推而广之？
+
+                        每个人都是不同的，笃信复习算法并不可取，应该以始为终，相信自己的判断。
+
+                        因此在拾忆笔记中，算法结果均为推荐性因素，你可以在评分之后，自由调整复习日期。</p>
+                    <!--<a class="main_btn" href="#">详细介绍</a>-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="https://cdn.huacishu.com/img/heying.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="download_app_area p_120" id="start_download">
+    <div class="container">
+        <div class="app_inner">
+            <h2>始于今日</h2>
+            <p>收藏通常是遗忘的代名词，不妨现在开始尝试
+                <i class="far fa-laugh-wink"></i>
+                <!--<i class="fa fa-apple"></i>-->
+            </p>
+            <div class="app_btn_area">
+
+                <div class="app_btn" id="download_android">
+                    <div class="media">
+                        <div class="d-flex">
+                            <!--<i class="fa fa-android" aria-hidden="true"></i>-->
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="media-body">
+                            <a href="https://www.coolapk.com/apk/226121" target="_blank"><h4>Android</h4></a>
+                            <p>酷安网</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--        <div class="app_btn" id="download_ios">-->
+                <!--          <div class="media">-->
+                <!--            <div class="d-flex">-->
+                <!--              <i class="fab fa-app-store-ios"></i>-->
+                <!--            </div>-->
+                <!--            <div class="media-body">-->
+                <!--              <a href="https://itunes.apple.com/cn/app/%E6%8B%BE%E5%BF%86%E7%AC%94%E8%AE%B0/id1348726863"-->
+                <!--                 target="_blank">-->
+                <!--                <h4>iOS</h4></a>-->
+                <!--              <p>应用商店</p>-->
+                <!--            </div>-->
+                <!--          </div>-->
+                <!--        </div>-->
+                <div class="app_btn" id="download_mac">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i class="fab fa-apple" aria-hidden="true"></i>
+                        </div>
+                        <div class="media-body">
+                            <a href="http://mac.dmg" target="_blank"><h4>MacOS</h4></a>
+                            <p>mac_version_name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="app_btn" id="download_win">
+                    <div class="media">
+                        <div class="d-flex">
+                            <i class="fab fa-windows" aria-hidden="true"></i>
+                        </div>
+                        <div class="media-body">
+                            <a href="http://win.exe" target="_blank"><h4>Windows</h4></a>
+                            <p>win_version_name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Download App Area =================-->
+
+<!--================Latest News Area =================-->
+<!--<section class="latest_news_area p_120" id="my_history">-->
+<!--  <div class="container">-->
+<!--    <div class="main_title">-->
+<!--      <h2>历史版本</h2>-->
+<!--      <p class="my_history" style="max-width: 800px">-->
+<!--        &lt;!&ndash;<div style="text-align: center"></div>&ndash;&gt;-->
+<!--        拾忆笔记的发展曲折而悠长-->
+<!--        <br>-->
+
+<!--        2008年，作者面临中考压力，为记忆力不好而深深苦恼。-->
+<!--        某天突发奇想，尝试将每天的笔记内容进行标号索引，-->
+<!--        按照1、3、7、15、30的间隔进行周期性复习。-->
+
+<!--        这个方法让我有了新奇的体验——-->
+<!--        <span style="font-weight: bold">-->
+<!--                “一个知识点，全班只有你一个人记得；一个知识点，老师自己都忘了，你还记得”-->
+<!--                </span>-->
+
+<!--        <br>-->
+<!--        至此作者开始了对复习领域的研究，并接触了记忆软件鼻祖——Supermemo，-->
+<!--        尝试能否利用Supermemo像背单词一样记忆笔记、试题，-->
+<!--        但均以失败告终-->
+<!--        <br>-->
+<!--        2014年，多年之后这一想法依旧萦绕我心，为此作者自学软件开发，上线初代“拾忆笔记”，不过由于理念错误，最终失败-->
+<!--        <br>-->
+<!--        2016年，面对考研压力，作者重头再来，构建电脑版本“拾忆笔记Lite”，并凭借它三个月时间考入中国人民大学-->
+<!--        <br>-->
+<!--        2018年，拾忆笔记覆盖iOS平台，却也陷入了绝境——开发、维护过于艰难-->
+<!--        <br>-->
+<!--        2019年，经过不断反思与重新审视，采用新技术、新理念，重头再来-->
+
+
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="latest_news_inner row">-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="l_news_item">-->
+<!--          <span class="date">2015年12月11日</span>-->
+<!--          <a href="http://www.huacishu.com/2015/12/11/mymemo/"><h4>初代拾忆笔记</h4></a>-->
+<!--          <p>拾忆笔记Android——剑走偏锋的失败之作</p>-->
+<!--          <div class="post_view">-->
+<!--                        <span><i class="fa fa-eye" aria-hidden="true"></i>-->
+<!--                          &lt;!&ndash;4.5k Views&ndash;&gt;-->
+<!--                        </span>-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="l_news_item">-->
+<!--          <span class="date">2017年4月29日</span>-->
+<!--          <a href="http://www.huacishu.com/2017/04/29/kylite_swing/"><h4>第二代拾忆笔记</h4></a>-->
+<!--          <p>拾忆笔记Lite——从“不忘”到“拾忆”</p>-->
+<!--          <div class="post_view">-->
+<!--            <span><i class="fa fa-eye" aria-hidden="true"></i></span>-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-4">-->
+<!--        <div class="l_news_item">-->
+<!--          <span class="date">2018年2月25日</span>-->
+<!--          <a href="http://www.huacishu.com/2018/02/25/kyios/"><h4>第三代拾忆笔记</h4></a>-->
+<!--          <p>拾忆笔记iOS——纪念“完美的80%”</p>-->
+<!--          <div class="post_view">-->
+<!--            <span><i class="fa fa-eye" aria-hidden="true"></i></span>-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> 07</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;<a href="#"><i class="fa fa-reply" aria-hidden="true"></i> 362</a>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--================End Latest News Area =================-->
+
+<!--================ start footer Area  =================-->
+<!--<footer class="footer-area p_120" id="bottom_footer">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <div class="col-lg-3  col-md-6 col-sm-6">-->
+<!--        <div class="single-footer-widget tp_widgets">-->
+<!--          <h6 class="footer_title">联系方式</h6>-->
+<!--          <ul class="list">-->
+<!--            &lt;!&ndash;<li><a href="#">QQ群：774775531</a></li>&ndash;&gt;-->
+<!--            <li style="color: white">-->
+<!--              <i class="fas fa-envelope"></i> MY@HUACISHU.COM-->
+<!--            </li>-->
+
+<!--            &lt;!&ndash;                        <li style="color: white">&ndash;&gt;-->
+<!--            &lt;!&ndash;                            <i class="fas fa-map-marker-alt"></i> 北京市海淀区中关村大街59号中国人民大学&ndash;&gt;-->
+<!--            &lt;!&ndash;                        </li>&ndash;&gt;-->
+<!--            &lt;!&ndash;<li><a href="#">Power Tools</a></li>&ndash;&gt;-->
+<!--            &lt;!&ndash;<li><a href="#">Marketing Service</a></li>&ndash;&gt;-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-lg-5 col-md-6 col-sm-6">-->
+<!--        &lt;!&ndash;<div class="single-footer-widget news_widgets">&ndash;&gt;-->
+<!--        &lt;!&ndash;<h6 class="footer_title">Newsletter</h6>&ndash;&gt;-->
+<!--        &lt;!&ndash;<p>You can trust us. we only send promo offers, not a single spam.</p>&ndash;&gt;-->
+<!--        &lt;!&ndash;<div id="mc_embed_signup">&ndash;&gt;-->
+<!--        &lt;!&ndash;<form target="_blank"&ndash;&gt;-->
+<!--        &lt;!&ndash;action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"&ndash;&gt;-->
+<!--        &lt;!&ndash;method="get" class="subscribe_form relative">&ndash;&gt;-->
+<!--        &lt;!&ndash;<div class="input-group d-flex flex-row">&ndash;&gt;-->
+<!--        &lt;!&ndash;<input name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''"&ndash;&gt;-->
+<!--        &lt;!&ndash;onblur="this.placeholder = 'Email Address '" required="" type="email">&ndash;&gt;-->
+<!--        &lt;!&ndash;<button class="btn sub-btn">Get Started</button>&ndash;&gt;-->
+<!--        &lt;!&ndash;</div>&ndash;&gt;-->
+<!--        &lt;!&ndash;<div class="mt-10 info"></div>&ndash;&gt;-->
+<!--        &lt;!&ndash;</form>&ndash;&gt;-->
+<!--        &lt;!&ndash;</div>&ndash;&gt;-->
+<!--        &lt;!&ndash;</div>&ndash;&gt;-->
+<!--      </div>-->
+<!--      <div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">-->
+<!--        &lt;!&ndash;<div class="single-footer-widget instafeed">&ndash;&gt;-->
+<!--        &lt;!&ndash;<h6 class="footer_title">Instagram Feed</h6>&ndash;&gt;-->
+<!--        &lt;!&ndash;<ul class="list instafeed d-flex flex-wrap">&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-01.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-02.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-03.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-04.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-05.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-06.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-07.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;<li><img src="img/instagram/Image-08.jpg" alt=""></li>&ndash;&gt;-->
+<!--        &lt;!&ndash;</ul>&ndash;&gt;-->
+<!--        &lt;!&ndash;</div>&ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="row footer-bottom d-flex justify-content-between align-items-center">-->
+<!--      <p class="col-lg-8 col-md-8 footer-text m-0">-->
+<!--        &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--        Copyright &copy;-->
+<!--        <script>document.write(new Date().getFullYear());</script>-->
+<!--        &lt;!&ndash;All rights reserved | This template is made with&ndash;&gt;-->
+<!--        &lt;!&ndash;<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>&ndash;&gt;-->
+<!--        &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>-->
+<!--      &lt;!&ndash;<div class="col-lg-4 col-md-4 footer-social">&ndash;&gt;-->
+<!--      &lt;!&ndash;<a href="#"><i class="fa fa-facebook"></i></a>&ndash;&gt;-->
+<!--      &lt;!&ndash;<a href="#"><i class="fa fa-twitter"></i></a>&ndash;&gt;-->
+<!--      &lt;!&ndash;<a href="#"><i class="fa fa-dribbble"></i></a>&ndash;&gt;-->
+<!--      &lt;!&ndash;<a href="#"><i class="fa fa-behance"></i></a>&ndash;&gt;-->
+<!--      &lt;!&ndash;</div>&ndash;&gt;-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+<!--================ End footer Area  =================-->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/popper.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script>
+    // check("mac")
+    // check("win")
+    //
+    // async function check(name) {
+    //   const root = "https://cdn.huacishu.com/installer/"
+    //
+    //   const data = await $.get(root + name + ".json?" + new Date().getTime())
+    //   let wrapperJQueryObj = "#download_" + name
+    //   wrapperJQueryObj = $(wrapperJQueryObj)
+    //   const url = root + data.name
+    //   wrapperJQueryObj.find("a").attr("href", url)
+    //   wrapperJQueryObj.find("p").text(data.version)
+    //
+    //   wrapperJQueryObj.click(function () {
+    //     window.open(url, "_blank")
+    //   })
+    // }
+
+    init()
+
+    async function init_old() {
+        const version_name = "1.0.72"
+        const data = {
+            "android": {
+                "url": `http://qiniu.huacishu.com/installer/apk/shiyibiji_${version_name}.apk`,
+                "version_name": version_name
+            },
+            "windows": {
+                "url2": `http://qiniu.huacishu.com/installer/desk/拾忆笔记安装程序${version_name}.exe`,
+                "url": "http://qiniu.huacishu.com/%E6%8B%BE%E5%BF%86%E7%AC%94%E8%AE%B0%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F1.0.72.exe",
+                "version_name": version_name
+            },
+            "mac": {
+                "url": `http://qiniu.huacishu.com/installer/desk/拾忆笔记-${version_name}.dmg`,
+                "version_name": version_name
+            }
+        }
+
+        handleSingle("android", data)
+        handleSingle("mac", data)
+        handleSingle("windows", data)
+    }
+
+    async function init() {
+        const url = "https://sybj-public.oss-cn-hangzhou.aliyuncs.com/installers/version.json?key=" + new Date().getTime()
+        const {data} = await axios.get(url)
+        console.log(data)
+
+
+        handleSingle("android", data)
+        handleSingle("mac", data)
+        handleSingle("win", data)
+    }
+
+    function handleSingle(platform, data) {
+        const {version, url} = data[platform]
+        let wrapperJQueryObj = "#download_" + platform
+        wrapperJQueryObj = $(wrapperJQueryObj)
+        wrapperJQueryObj.find("a").attr("href", url)
+        wrapperJQueryObj.find("p").text(version)
+        wrapperJQueryObj.click(function () {
+            window.open(url, "_blank")
+        })
+    }
+
+
+    $("#download_ios").click(function () {
+        // alert("")
+        // window.open("https://itunes.apple.com/cn/app/%E6%8B%BE%E5%BF%86%E7%AC%94%E8%AE%B0/id1348726863", "_blank")
+    })
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花辞树</title>
+    <style>
+        .beian {
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+<a href="../../">Home</a>
+
+
+<h1>AnyaMemo：开源的Mac端文档复习工具</h1>
+<div>2022-08-21</div>
+<hr>
+<div><h2>AnyaMemo是什么？</h2>
+<p>一款用于复习文档的软件，特点是能够为文档生成”稳定的链接“，即使文档改名或移动位置，依旧能够实现对文档的追踪。</p>
+<p>并且，在总结了之前的些许经验教训后，我希望能做一些简单且“生命力长一点”的东西，因此AnyaMemo是去中心化（单机版的别称）、免费且<a href="https://github.com/my-yy/AnyaMemo">开源</a>的<img src="https://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em"></p>
+<p><strong>下载地址（仅支持Mac）</strong> ：https://github.com/my-yy/AnyaMemo/releases/tag/first-release</p>
+<p>Intel Mac 选“AnyaMemo-1.0.0.Intel.dmg”</p>
+<p>M1 Mac选“AnyaMemo-1.0.0-AppleSilicon.dmg”</p>
+<p>由于我没有对这个软件进行签名，因此在第一次打开时会提示”无法确认开发者身份“，打开软件方法可参考<a href="https://www.sohu.com/a/525856165_120371013">此处</a></p>
+<p><strong>功能演示</strong></p>
+<p>1.将任意文件拖拽到AnyaMemo，即可将其纳入复习计划（软件没有存储文件内容，只是记录了指向该文件的链接）：</p>
+<p><img alt="01" src="https://cdn.huacishu.com/img/202208211014714.gif" /></p>
+<p>2.在”复习“页面，点击文件名即可打开该文件。</p>
+<p><img alt="2点击打开文件" src="https://cdn.huacishu.com/img/202208211024944.gif" /></p>
+<hr />
+<h2>简要的教程</h2>
+<p>这个软件源自于我平时对几百篇论文笔记”混个眼熟“的需要，可以用来复习word文档、PDF、以及任何文件~</p>
+<p><strong>复习间隔</strong>
+因为只是混个眼熟，所以在复习流程上做了简化：只支持按”固定间隔“的方式进行复习，在复习页面点击文件即可打开（名字划掉即代表已经完成了复习）。</p>
+<p>软件存在一个全局默认的复习间隔，拖拽文件到软件时会默认以该间隔安排复习计划。</p>
+<p><img src="https://cdn.huacishu.com/img/202208211200008.png" style="width:700px"/></p>
+<p>此外，也可以为文件夹设置单独的复习间隔，那么在该文件夹下创建的复习条目则会以该间隔安排复习。</p>
+<p><img src="https://cdn.huacishu.com/img/202208211202547.png" style="width:700px"/></p>
+<p>（注意：这些间隔仅在创建新记录时作为参考，修改全局默认间隔（或文件夹复习间隔）并<strong>不会</strong>改变已有条目的复习计划）</p>
+<p><strong>数据管理与备份</strong></p>
+<p>数据存储在这个目录下：<code>/Users/用户名/Library/Application Support/AnyaMemo/sync/db/</code> （右键点击“小房子”路径图标可直接打开这个文件夹）</p>
+<p>每个<code>.json</code>文件即代表了一项文件记录，也可以直接在Finder中对这些文件改名，或者创建文件夹来进行组织。此外，如果你了解<a href="https://www.bilibili.com/video/BV1954y1p7s6?spm_id_from=333.337.search-card.all.click&amp;vd_source=514112df39066866429d3203031fc8f3">json语法格式</a> 也可以自己修改<code>.json</code>文件的内容（字段定义详见Github）。</p>
+<p><img alt="" src="https://cdn.huacishu.com/img/202208231718330.png" /></p>
+<p>注意：软件不会监控这些文件变动，所以你需要手动在软件中点"刷新"按钮来刷新界面显示。</p>
+<p><strong>填入链接</strong></p>
+<p>除了文件外，你还可以插入其它链接（如DEVONThink）。
+需要注意的是，如果填写的是文件路径，需要在路径前补充<code>file://</code>，例如：<code>file:///Users/my/Desktop/DANN.docx</code>，否则路径是无效的（软件无法为 手动填写的文件路径 生成“稳定的链接”，因此推荐通过拖拽录入文件）。
+<img alt="" src="https://cdn.huacishu.com/img/202208231813551.png" /></p>
+<h2>后续开发计划</h2>
+<p>目前忙于学业并没有多少精力在开发上，所以在明确了自己的能力范围后，我决定做一些简单（简陋）的小玩意儿。
+我愈发体会到好用的东西其实都是“量身定做”的，因此也不再想追求什么极致了_(:з」∠)_
+因此这个软件短期内不会有更新，未来也不会有大的功能变动<img src="https://cdn.huacishu.com/img/bili_妙哇.png" style="height: 1.5em">。</p></div>
+
+
+<div class="beian">
+    <a href="http://beian.miit.gov.cn/">津ICP备15007777号</a>
+</div>
+
+
+</body>
+</html>

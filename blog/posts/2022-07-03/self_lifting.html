@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花辞树</title>
+    <style>
+        .beian {
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+<a href="../../">Home</a>
+
+
+<h1>音脸关系学习论文解读：Self-Lifting</h1>
+<div>2022-07-03</div>
+<hr>
+<div><p>介绍我发表在ICMR2022的文章：Self-Lifting: A Novel Framework for Unsupervised Voice-Face Association Learning
+只是浅谈一下思路，细节有兴趣可以参看论文<img src="http://cdn.huacishu.com/img/bili_妙哇.png" style="height: 1.5em"></p>
+<p>论文：http://cdn.huacishu.com/Self-Lifting_ICMR2022.pdf</p>
+<p>代码：https://github.com/my-yy/sl_icmr2022</p>
+<p><strong>我认为这篇论文的价值在于</strong>
+1.给出了针对问题的两种解决思路</p>
+<p>2.基于一致的架构与测试流程与以往工作进行了对比
+在研究这个领域的过程中，我注意到很多工作使用的数据集预处理方式、测试标准不统一，并且backbone结构也存在差异，导致不同文章之间的分数不可比。在这篇论文中，我将一些（我有能力复现的）工作基于统一的Backbone进行了测试，且每个模型以不同的随机数种子初始化跑了5遍以降低随机性影响。</p>
+<p>3.代码开源，并且是该领域为数不多所开源代码<strong>能跑到论文标注分数</strong>的工作。这个是让我自豪的事。<img src="http://cdn.huacishu.com/img/bili_doge_脱单.png" style="height: 1.5em"></p>
+<p>下面我从研究领域——”音脸关系学习“出发来谈：</p>
+<h1>研究领域</h1>
+<p>声音与人脸之间是存在潜在联系的，比如，我们可以在打电话的时候推测对方的大致样貌，即便并没有见过对方。这是因为声音与人脸之间共享了一些属性，比如性别、年龄、体型...。 而“音脸学习”即是通过算法（模型）来探究声音与人脸之间的这种联系，并通过三类具体的任务来量化：</p>
+<p><img   src="https://cdn.huacishu.com/img/202207072147506.png" style="zoom:50%;" /></p>
+<p>1）音脸验证（Verification）：判断声音与人脸是否对应同一人。</p>
+<p>2）音脸匹配（Matching）：根据声音找出匹配的人脸（或反过来）。</p>
+<p>3）音脸检索（Retrieval）：根据声音检索出对应的人脸（或反过来）。</p>
+<h1>问题定义</h1>
+<p>视频数据中天然蕴含声音与人脸之间的对应关系，看似是丰富易得的训练语料。但是以往的研究在处理音脸关系任务时通常采用了有监督方案，模型在训练需要数据集包中含人员标签，无法对无标签数据进行利用。为此，研究目标是如何实现在音脸关系学习时不使用真实标签，即无监督的音脸关系学习。</p>
+<h1>问题分析</h1>
+<p>首先分析为什么以往的研究中需要标签。
+以往的研究通常基于度量学习的解决方案，声音与人脸编码为向量表示，随后通过度量学习函数使得向量表示之间可度量：</p>
+<p><img src="https://cdn.huacishu.com/img/sl_2.png?watermark/2/text/aHVhY2lzaHUuY29t/fontsize/300/font/U291cmNlIEhhbiBTYW5zIFND/dissolve/85/gravity/South" style="zoom: 25%;" /></p>
+<p>而度量学习损失函数需要标签作为指导信息。例如：ID分类器作为一种隐式的度量学习函数，需要人员标签来作为分类目标；而Triplet loss此类显式的度量学习函数，同样需要标签来构建可信的负样本。</p>
+<h1>解决思路</h1>
+<p>在分析之后就有了无监督的解决思路：
+1.仅利用正样本对进行训练
+2.基于伪标签进行训练</p>
+<h2>思路1：仅利用正样本对进行学习</h2>
+<ol>
+<li>Correspondence Autoencoder (CAE)
+   CAE是一个经典的无监督学习框架，它最初用以解决图片-文本之间的检索任务，可以直接套用到音脸关系学习。
+   具体地，模型结构由两个AutoEncoder构成，要求由人脸生成对应的声音，同时由声音作为输入要生成对应的人脸：</li>
+</ol>
+<p><img src="https://cdn.huacishu.com/img/sl_3.png?watermark/2/text/aHVhY2lzaHUuY29t/fontsize/300/fill/d2hpdGU=/font/U291cmNlIEhhbiBTYW5zIFND/dissolve/85/gravity/South" style="zoom:25%;" /></p>
+<p>可见在训练过程中只需要对应用同一个人的声音与人脸样本，无需负样本对，因此可构成解决方案。</p>
+<p>2.效仿 “对比学习”（Contrastive Learning）
+对比学习与音脸关系学习是很相似的，在对比学习中，同一张图片进行数据增强的版本构成正样本对，音脸关系学习中来自同一个视频片段的声音与人脸恰好也是正样本对。
+<img src="https://cdn.huacishu.com/img/sl_4.png?watermark/2/text/aHVhY2lzaHUuY29t/fontsize/300/fill/d2hpdGU=/font/U291cmNlIEhhbiBTYW5zIFND/dissolve/85/gravity/South" style="zoom:25%;" /></p>
+<p>因此，对比学习中不使用负样本的方法（如BYOL 与Barlow Twins），可以直接用在音脸关系学习:</p>
+<p><img src="https://cdn.huacishu.com/img/sl_5.png?watermark/2/text/aHVhY2lzaHUuY29t/fontsize/300/font/U291cmNlIEhhbiBTYW5zIFND/dissolve/85/gravity/South" style="zoom:25%;" /></p>
+<p>为了简单起见，我在论文中直接使用了Barlow Twins 损失函数，这是第二个解决方案。</p>
+<h2>思路2：基于伪标签进行训练</h2>
+<p>即：对样本进行聚类，然后根据聚类结果生成伪标签，利用伪标签进行学习。
+这个方法的优点在于，得到伪标签后相当于标签是已知的，因此可以直接利用现有的度量学习损失函数进行训练。
+”聚类-训练“ 这个想法是从DeepCluster这篇文章来的，为此我在论文中也引入了DeepCluster作为baseline:
+<img src="https://cdn.huacishu.com/img/202207072044283.png?watermark/2/text/aHVhY2lzaHUuY29t/fontsize/300/font/U291cmNlIEhhbiBTYW5zIFND/dissolve/85/gravity/South" style="zoom:25%;" /></p>
+<p>而论文标题中的Self-Lifting框架也是“聚类-训练”的路子，与DeepCluster原理上是一致的，主要不同点在于：</p>
+<p>1）使用了更强的度量学习函数（跨模态版本的Multi-Similaity Loss）
+2）使用了更好的聚类策略
+3）当然，最重要的，一个古怪且高深的名字<img src="http://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em"></p>
+<h2>论文的不足之处</h2>
+<p>这篇论文里我使用从专家模型中抽取出的特征进行训练，而并非直接利用声音或图片来Train from scratch。
+输入数据已经是包含了语义信息的，这会导致初始聚类结果比较准确。
+因此，完善做法是直接用原始输入来训练，或者补充对比一下基于原始输入作为训练的结果。
+关于这一点我和审稿人意见一致，
+而我没有基于原始输入的数据进行训练的原因是因为耗时太长，
+我只有一张显卡，而任务所处理的数据量是上百GB，不在我能力范围之内。</p>
+<p>不过这一问题并不大：</p>
+<p>1）直接用原始输入进行”聚类-训练“是可行的，这在DeepCluster等文章中早已有验证</p>
+<p>2）以往无监督工作虽然基于原始输入，但是依旧使用了预训练的模型参数，因此本质上并没有区别</p>
+<p>3）虽然使用了专家模型，但是专家模型并非通过音脸任务训练，与无监督说法并不违背</p>
+<p>4）所对比模型使用了相同的输入，分数对比依旧是公平的</p>
+<h1>后记</h1>
+<p>Self-Lifting 是我自主发表的第一篇文章：提出想法、实验验证、论文撰写、投稿。再到会上对线<img src="http://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em">。</p>
+<p>最初我接触“听音识人”这个方向是在2017年的夏天，那时我考上研究生尚未入学，
+导师告诉我用深度学习去做“听音识人”任务或许是可行的，让我作为研究方向摸索一番。
+可我当时对这一领域毫无兴趣，加上去实习，结果不了了之。</p>
+<p>后来这个领域最早的一篇文章（SVHF）发表于2018年，
+而等到我的第一篇文章发表已经是5年后的2022年。</p>
+<p>我对于做研究的最大感悟是：
+<strong>一定要和专业的人共事，衡量问题难度、解决能力范围之内的问题。</strong>
+这样才不至于“事倍功半”或者“事倍功零”。
+不然，
+人生就浪费在了看似努力，
+但毫无价值的科研探索上<img src="http://cdn.huacishu.com/img/bili_囧.png" style="height: 1.5em">。</p></div>
+
+
+<div class="beian">
+    <a href="http://beian.miit.gov.cn/">津ICP备15007777号</a>
+</div>
+
+
+</body>
+</html>

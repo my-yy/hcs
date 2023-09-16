@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    Batch Upload
+  
+ | 帮助文档</title>
+
+
+
+<link rel="stylesheet" href="/sybj/help/book.min.6e479eb8b5bb8bdc1812d229d66394389c2630ac2eed69c7368c16b23c72f73d.css">
+
+
+<link rel="icon" href="/sybj/help/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://www.huacishu.com/sybj/help/">帮助文档</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fsybj\2fhelp\2f docs\2f batch_upload\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/sybj/help/docs/summary">综述</a></li>
+<li><a href="/sybj/help/docs/fun_of_rl">复习算法</a></li>
+<li><a href="/sybj/help/docs/apps/evernote">印象笔记预览</a></li>
+</ul>
+<ul>
+<li><a href="/sybj/help/docs/2526">跑路公告</a></li>
+<li><a href="/sybj/help/docs/about">关于</a></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/sybj/help/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    Batch Upload
+  
+</strong>
+</header>
+
+      
+<article class="markdown"><h1 id="批量导入">批量导入</h1>
+<p>在“笔记本”中点击“批量导入内容”</p>
+<!-- raw HTML omitted -->
+<p>拾忆笔记支持导入.xlsx格式的Excel文件，文件第一行应包含 name、content、content2 三个字段，例如：
+<!-- raw HTML omitted --></p>
+<p><a href="http://qiniu.huacishu.com/doc/batch_upload_demo.xlsx">点击此处下载示例文件</a></p>
+<h2 id="字段说明">字段说明</h2>
+<p>name为纯文本字段，不支持图片、链接等语法；content、content2为富文本字段，支持各类语法规则</p>
+<p>字段含义受“笔记格式”影响，例如:</p>
+<p>对于“笔记”格式笔记：</p>
+<blockquote>
+<p>name为笔记标题，content为笔记内容，忽略content2字段</p>
+</blockquote>
+<p>对于“单页“格式笔记：</p>
+<blockquote>
+<p>content为内容字段，name、content2均被忽略</p>
+</blockquote>
+<p>详细情况可参照此表：</p>
+<!-- raw HTML omitted -->
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#字段说明">字段说明</a></li>
+  </ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+  
+</body>
+
+</html>

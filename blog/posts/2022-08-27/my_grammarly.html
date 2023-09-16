@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花辞树</title>
+    <style>
+        .beian {
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+<a href="../../">Home</a>
+
+
+<h1>Grammarly Latex语法检查工具</h1>
+<div>2022-08-27</div>
+<hr>
+<div><p>演示界面：<a href="https://huacishu.com/app/grammarly/">https://huacishu.com/app/grammarly/</a>
+源代码：<a href="https://github.com/my-yy/MyGrammarly">Github</a>
+下载到本地使用：<a href="https://github.com/my-yy/MyGrammarly/archive/refs/heads/main.zip">点击此处</a></p>
+<h2>这是做什么用的？</h2>
+<p>Latex中的一些符号（如公式$$、引用~\cite）会干扰Grammarly的语法检查，
+例如这个句子中<code>modalitiies</code>拼写错误，但Grammarly无法检测出来:
+<img src="https://cdn.huacishu.com/img/202208271136195.png" alt="l" style="zoom: 50%;" /></p>
+<p>为此我写了一个小工具，配合Grammarly的浏览器插件使用，去除latex中的符号以方便语法检查，检查完毕后再转换回去：</p>
+<p><img alt="" src="https://cdn.huacishu.com/img/202208271145509.gif" /></p>
+<h2>现有功能</h2>
+<p>去除注释、引用（~\cite、~\shortcite、 ~\ref、~\cref）与行内公式$$</p>
+<p>例如对于如下内容：
+<code>%Some comments
+Bain~\shortcite{358_frozen} used a space-time transformer to  % Inline comments
+Given an unlabeled video dataset $\mathcal{D}=\{x_i\}_{i=1}^N$,
+where each instance $x_i$ has two modalitiies: voice $x^v_i$ and face $x^f_i$.</code></p>
+<p>点击“转换”会符号转变为编号[*]形式：
+<code>Bain[0] used a space-time transformer to 
+Given an unlabeled video dataset [1],
+where each instance [2] has two modalities: voice [3] and face [4].</code></p>
+<p>再点击“回写”则将编号替换回原内容:</p>
+<p><code>Bain~\shortcite{358_frozen} used a space-time transformer to 
+Given an unlabeled video dataset $\mathcal{D}=\{x_i\}_{i=1}^N$,
+where each instance $x_i$ has two modalities: voice $x^v_i$ and face $x^f_i$.</code></p>
+<h2>本地部署</h2>
+<ul>
+<li>演示页面无法保证一直可用，所以推荐下载到本地，用浏览器打开<code>index.html</code>就可以<img src="https://cdn.huacishu.com/img/bilibili_doge.png" style="height: 1.5em"></li>
+<li>转换由浏览器本地实现，不会向服务器发送内容，主要功能实现在<code>js/latex_util.js</code>，可以根据自身的需要补充功能  </li>
+<li>需求是众口难调的，所以有生之年不会有更新</li>
+</ul>
+<h2>相关解决方案</h2>
+<ul>
+<li>
+<p>Overleaf平台有个Chrome插件：<a href="https://chrome.google.com/webstore/detail/overleaf-textarea/iejmieihafhhmjpoblelhbpdgchbckil">Overleaf textarea</a>
+特点：功能强大，也更具破坏性<img src="https://cdn.huacishu.com/img/bili_妙哇.png" style="height: 1.5em"></p>
+</li>
+<li>
+<p>VSCode插件：<a href="https://marketplace.visualstudio.com/items?itemName=znck.grammarly">Grammarly for VS Code</a></p>
+</li>
+<li>
+<p>命令行方式将<code>.tex</code>文件转换为文本（不可逆）
+  pandoc: <code>pandoc --to=plain --wrap=none your_file.tex</code>
+  detex: <code>detex your_file.tex &gt; your_file.txt</code></p>
+</li>
+</ul></div>
+
+
+<div class="beian">
+    <a href="http://beian.miit.gov.cn/">津ICP备15007777号</a>
+</div>
+
+
+</body>
+</html>
