@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HCS-App</title>
+  <script src="js/vue.js"></script>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!--  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+  <style>
+    .desc {
+      font-size: small;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <!--  {{ message }}-->
+
+  <h1>App List</h1>
+
+  <h2>遗忘算法</h2>
+<!--  <div>-->
+<!--    <el-link href="https://sr.huacishu.com/#/">M1 遗忘算法API</el-link>-->
+<!--    <span class="desc">AI遗忘预测算法</span>-->
+<!--  </div>-->
+
+  <div>
+    <el-link href="https://zhuanlan.zhihu.com/p/557009340">AnyaMemo</el-link>
+    <span class="desc"> 文档复习工具【Mac】</span>
+  </div>
+
+  <div>
+    <el-link href="https://zhuanlan.zhihu.com/p/602516942">MindRev</el-link>
+    <span class="desc"> 思维导图=>闪卡 App 【Win+Mac】</span>
+  </div>
+
+
+  <div>
+    <el-link href="https://github.com/my-yy/SeaNote">拾忆笔记 单机版</el-link>
+    <span class="desc"> 结合遗忘算法的笔记软件【Mac】</span>
+  </div>
+
+  <div>
+    <el-link href="https://www.huacishu.com/sybj/">拾忆笔记 联网版</el-link>
+    <span class="desc">  (服务即将下线)【Win+Mac+Android】</span>
+  </div>
+
+  <h2>其它</h2>
+  <div>
+    <el-link href="https://zhuanlan.zhihu.com/p/558421606">Grammarly Latex语法检查工具</el-link>
+    <span class="desc">【开源】</span>
+  </div>
+
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!',
+    },
+    async created() {
+
+
+    },
+    methods: {}
+  })
+</script>
+
+</body>
+</html>
